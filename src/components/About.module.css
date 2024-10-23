@@ -1,0 +1,29 @@
+.About {
+	height: 100dvh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.About h2 {
+	font-size: 55px;
+	font-family: var(--main-font), sans-serif;
+	color: var(--website-color);
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+.AboutCards{
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 20px;
+}
+
+.AboutStatic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}

@@ -1,0 +1,39 @@
+.ServiceCard {
+	position: relative;
+	grid-column: span 12;
+	background-color: #516182;
+	color: #ffffff;
+	padding: 20px;
+	height: 200px;
+}
+
+.service_heading{
+	font-family: var(--heading-font), serif;
+	font-weight: 700;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.ServiceCard > p {
+	width: calc(100% - 200px);
+	padding: 0 10px;
+}
+
+.ServiceCard .coming-soon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background-color: #cb4634;
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.ServiceCard .coming-soon > p {
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: rotate(45deg);
+}

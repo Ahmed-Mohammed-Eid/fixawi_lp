@@ -1,0 +1,18 @@
+/* SERVICES */
+
+.Services {
+	height: 100dvh;
+}
+
+.Services_heading {
+	font-family: var(--main-font), cursive;
+	font-size: 40px;
+	color: #000000;
+	margin-bottom: 50px;
+}
+
+.Services_list {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 20px;
+}

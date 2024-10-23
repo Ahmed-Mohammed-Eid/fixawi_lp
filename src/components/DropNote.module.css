@@ -1,0 +1,75 @@
+.DropANote{
+    border: 1px solid var(--website-color);
+}
+
+.paragraph{
+    color: #515151;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+
+.input,
+.textarea{
+    background-color: #FFFFFF;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    border: 1px solid var(--website-color);
+    padding: 10px 20px;
+    width: 100%;
+    caret-color: var(--website-color);
+    color: #000000;
+}
+
+.input::placeholder,
+.textarea::placeholder{
+    color: #8f8f8f;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+}
+
+.input:focus,
+.textarea:focus{
+    outline: none;
+}
+
+.textarea{
+    height: 120px;
+    resize: none;
+}
+
+.button{
+    background-color: var(--website-color);
+    color: #FFFFFF;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.button:hover{
+    background-color: #375ba6
+}
+
+.button:active{
+    background-color: #1e3a6f;
+    transform: scale(0.98);
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: auto;
+}
+
+.icon{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

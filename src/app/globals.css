@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Fjalla+One&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap  ");
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	/* FONTS */
+	--heading-font: "Noticia Text", serif;
+	--main-font: "Fjalla One", sans-serif;
+	--secondary-font: "Amiko", sans-serif;
+	/* COLORS */
+	--inactive-color: #d3cccc;
+	--active-color: #ffffff;
+	--website-color: #2b4e97;
+	--body-bg: #F3F8FF;
+}
+
+html[lang="ar"] {
+	--heading-font: "IBM Plex Sans Arabic", sans-serif;
+	--main-font: "Tajawal", sans-serif;
+	--secondary-font: "Amiri", serif;
+}
+
+body {
+	font-family: var(--main-font);
+	background-color: var(--body-bg);
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+/* SCROLL SMOOTH */
+html {
+	scroll-behavior: smooth;
+}
+
+/* CONTAINER */
+.fx-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* SWIPER */
+.swiper{
+	padding: 50px 0 20px !important;
+}
+
+.swiper-pagination{
+	top: 0 !important;
+	bottom: auto !important;
+}
+
+.swiper-pagination-bullet{
+	width: 40px !important;
+	height: 8px !important;
+	border-radius: 0 !important;
+}
+
+/* CUSTOM SCROLL BAR */
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--website-color) var(--inactive-color);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--website-color);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--inactive-color);
+}

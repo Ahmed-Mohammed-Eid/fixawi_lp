@@ -1,0 +1,38 @@
+.Service {
+	grid-column: span 4;
+	border: 1px solid var(--website-color);
+	background-color: #ffffff;
+	padding: 20px;
+	transition: all 0.15s ease-in-out;
+}
+
+.Service__heading {
+	margin-left: 10px;
+	font-family: var(--heading-font), serif;
+	font-weight: 700;
+	color: var(--website-color);
+	font-size: 22px;
+	text-transform: uppercase;
+	transition: all 0.15s ease-in-out;
+}
+
+.Service .Service__description {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.Service:hover {
+	background-color: var(--website-color);
+}
+
+.Service:hover svg path {
+	fill: #ffffff;
+}
+
+.Service:hover .Service__heading {
+	color: #ffffff;
+}
+
+.Service:hover .Service__description {
+	color: #ffffff;
+}

@@ -1,0 +1,100 @@
+{
+	"Navbar": {
+		"Home": "Home",
+		"Services": "Services",
+		"About": "About",
+		"HowToUse": "How to use",
+		"Contact": "Contact us"
+	},
+	"Hero": {
+		"heroTextBold": "FIXAWI",
+		"heroText": " is a trusted car service app connecting vehicle owners with reliable service providers. We offer a wide range of automotive services, including repairs, maintenance, insurance, and roadside assistance. With FIXAWI, you can easily find, book, and manage all your car care needs through a convenient, user-friendly platform focused on quality and convenience."
+	},
+	"Services": {
+		"S1": {
+			"title": "Service Centers Map",
+			"content": "Access a map displaying nearby service centers, categorized by type (mechanics, tire shops, etc.). Filter results based on service type, ratings, and price points to find the best option for your needs. With customer reviews and ratings, you can make informed decisions about where to get your car serviced."
+		},
+		"S2": {
+			"title": "Insurance Services",
+			"content": "Easily renew or issue new car insurance policies through our integrated insurance broker service. Fixawi partners with reputable insurance providers to offer competitive rates. We also simplify the claims process by handling communication between service centers and insurance companies."
+		},
+		"S3": {
+			"title": "Emergency Assistance (WINCH)",
+			"content": "For major breakdowns, Fixawi’s 24/7 winch service will tow your vehicle to the nearest service center. We partner with trusted winch providers to ensure fast, reliable assistance, no matter where you are."
+		},
+		"Soon": {
+			"title": "Portable Car Maintenance",
+			"content": "Need car maintenance on the go? Fixawi’s fleet of equipped vehicles provides on-spot services such as tire changes, battery replacements, and minor repairs. Use the app to schedule a service and track the technician’s arrival in real time. All technicians are certified to guarantee quality."
+		}
+	},
+	"About": {
+		"title": "Why Fixawi?",
+		"cards": {
+			"1": {
+				"title": "Ease of booking",
+				"slogan": "“Your car's service, a tap away.”",
+				"content": "Book car services with unparalleled ease using Fixawi."
+			},
+			"2": {
+				"title": "Convenience",
+				"slogan": "“All-in-one, all for you”",
+				"content": "Fixawi handles all your car maintenance needs in one app."
+			},
+			"3": {
+				"title": "Peace of Mind",
+				"slogan": "“ Drive happy, stress-free”",
+				"content": " Focus on enjoying your drive, not stressing over car care with Fixawi."
+			},
+			"4": {
+				"title": "Quality",
+				"slogan": "“Top service, every time”",
+				"content": "Fixawi provides expert services that meet high standards."
+			},
+			"5": {
+				"title": "Availability",
+				"slogan": "“Always there, day and night”",
+				"content": "Easy booking and 24/7 service access with Fixawi."
+			},
+			"6": {
+				"title": "Transparency",
+				"slogan": "“ Clear prices, no surprises”",
+				"content": " Fixawi offers clear, upfront pricing with no surprises."
+			}
+		},
+		"staticCards": {
+			"1": {
+				"title": "Our Mission",
+				"content": "To provide a reliable, convenient, and transparent platform for car owners to access quality automotive services."
+			},
+			"2": {
+				"title": "Our Vision",
+				"content": "To become the go-to car service app for vehicle owners, offering a seamless experience that prioritizes customer satisfaction."
+			}
+		}
+	},
+	"HowToUse": {
+		"title": "Do it in just 3 simple steps",
+		"steps": {
+			"1": "Choose the services you want and find out their prices.",
+			"2": "Choose a convenient date and time",
+			"3": "Enjoy hassle-free car services in record time, a step away."
+		}
+	},
+	"DropANote": {
+		"title": "Drop a note",
+		"summary": "We'd love to hear from you! Whether you have suggestions, questions, or just want to drop us a note, your feedback is invaluable. Help us make Fixawi even better by sharing your thoughts. Don't hesitate—your opinion truly matters to us!",
+		"fName": "First Name",
+		"lName": "Last Name",
+		"email": "Email",
+		"subject": "Subject",
+		"message": "Message",
+		"send": "Send"
+	},
+	"Footer": {
+		"paragraph": "Fixawi is a private owned company focused on simplifying car Services for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices.\n\n",
+		"rights": "© 2024 Fixawi. All rights reserved.",
+		"terms": "TERMS AND CONDITIONS",
+		"privacy": "PRIVACY POLICES"
+	}
+}
