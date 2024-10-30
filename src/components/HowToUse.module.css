@@ -1,7 +1,7 @@
 /* HowToUse */
 
 .HowToUse {
-	height: 100dvh;
+	min-height: 100svh;
 }
 
 .HowToUse_heading {
@@ -46,7 +46,7 @@
 .HowToUse_Step {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
 	gap: 20px;
 }
@@ -69,4 +69,91 @@
 	font-size: 30px;
 	color: #000000;
 	font-weight: 500;
+	width: calc(100% - 60px);
+}
+
+
+@media screen and (max-width: 1024px){
+
+	.HowToUse_Content h3{
+		font-size: 35px;
+	}
+
+	.HowToUse_Steps{
+		margin-top: 50px;
+		gap: 50px;
+	}
+
+	.HowToUse_Step h4 {
+		font-size: 30px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.HowToUse_Step p {
+		font-size: 22px;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+	.HowToUse_Container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+	}
+
+	.HowToUse_heading {
+		text-align: center;
+		font-size: 40px;
+		margin-top: 50px;
+	}
+
+	.HowToUse h3{
+		text-align: center;
+		font-size: 30px;
+		margin-top: 50px;
+	}
+
+	.HowToUse_Image{
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 1;
+		display: flex;
+		justify-content: center;
+	}
+
+	.HowToUse_Content {
+		grid-column: 1 / span 1;
+		grid-row: 2 / span 1;
+	}
+
+	.HowToUse_Steps{
+		margin-top: 50px;
+	}
+
+	.HowToUse_Step {
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
+	.HowToUse_Step h4 {
+		font-size: 26px;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.HowToUse_Step p {
+		width: calc(100% - 60px);
+		font-size: 20px;
+		text-align: left;
+	}
+
+	:global(html[lang="ar"]) .HowToUse_Step p {
+		text-align: right;
+	}
 }

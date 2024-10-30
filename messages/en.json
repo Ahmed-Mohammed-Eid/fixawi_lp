@@ -2,7 +2,7 @@
 	"Navbar": {
 		"Home": "Home",
 		"Services": "Services",
-		"About": "About",
+		"About": "About us",
 		"HowToUse": "How to use",
 		"Contact": "Contact us"
 	},
@@ -11,6 +11,7 @@
 		"heroText": " is a trusted car service app connecting vehicle owners with reliable service providers. We offer a wide range of automotive services, including repairs, maintenance, insurance, and roadside assistance. With FIXAWI, you can easily find, book, and manage all your car care needs through a convenient, user-friendly platform focused on quality and convenience."
 	},
 	"Services": {
+		"heading": "Services",
 		"S1": {
 			"title": "Service Centers Map",
 			"content": "Access a map displaying nearby service centers, categorized by type (mechanics, tire shops, etc.). Filter results based on service type, ratings, and price points to find the best option for your needs. With customer reviews and ratings, you can make informed decisions about where to get your car serviced."
@@ -23,9 +24,14 @@
 			"title": "Emergency Assistance (WINCH)",
 			"content": "For major breakdowns, Fixawi’s 24/7 winch service will tow your vehicle to the nearest service center. We partner with trusted winch providers to ensure fast, reliable assistance, no matter where you are."
 		},
+		"S4": {
+			"title": "Store to Door",
+			"content": "Need a part or accessory for your vehicle? Fixawi’s store-to-door service delivers car parts and accessories right to your doorstep. Browse our catalog, place an order, and have your items delivered hassle-free."
+		},
 		"Soon": {
 			"title": "Portable Car Maintenance",
-			"content": "Need car maintenance on the go? Fixawi’s fleet of equipped vehicles provides on-spot services such as tire changes, battery replacements, and minor repairs. Use the app to schedule a service and track the technician’s arrival in real time. All technicians are certified to guarantee quality."
+			"content": "Need car maintenance on the go? Fixawi’s fleet of equipped vehicles provides on-spot services such as tire changes, battery replacements, and minor repairs. Use the app to schedule a service and track the technician’s arrival in real time. All technicians are certified to guarantee quality.",
+			"soon": "Coming soon"
 		}
 	},
 	"About": {
@@ -74,6 +80,7 @@
 		}
 	},
 	"HowToUse": {
+		"heading": "How to use",
 		"title": "Do it in just 3 simple steps",
 		"steps": {
 			"1": "Choose the services you want and find out their prices.",

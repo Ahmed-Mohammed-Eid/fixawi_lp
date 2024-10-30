@@ -12,11 +12,11 @@ export default function Footer() {
                 <p className={classes.paragraph}>
                     {t("Footer.paragraph")}
                 </p>
-                <div className={"flex justify-between items-center"}>
-                    <p className={classes.rights}>
+                <div className={"flex flex-col md:flex-row md:justify-between md:items-center"}>
+                    <p className={classes.rights + " order-2 text-center"}>
                         {t("Footer.rights")}
                     </p>
-                    <div className={classes.links}>
+                    <div className={classes.links + " order-1 flex flex-row justify-between items-center"}>
                         <Link href={"#"} className={classes.link}>
                             {t("Footer.terms")}
                         </Link>

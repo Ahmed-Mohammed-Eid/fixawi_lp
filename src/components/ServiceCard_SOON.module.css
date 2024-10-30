@@ -37,3 +37,57 @@
 	left: 50%;
 	transform: rotate(45deg);
 }
+
+
+:global(html[lang="ar"]) .ServiceCard .coming-soon {
+	left: 0;
+	right: initial;
+	clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+}
+
+:global(html[lang="ar"]) .ServiceCard .coming-soon > p {
+	transform: rotate(-45deg);
+	right: 50%;
+	left: initial;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.ServiceCard {
+		grid-column: span 12;
+		height: auto;
+		padding-top: 60px;
+	}
+
+	.ServiceCard .coming-soon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 50px;
+		clip-path: initial !important;
+	}
+
+	.ServiceCard .coming-soon > p {
+		font-size: 16px;
+		top: 50%;
+		left: 50%;
+		transform: initial;
+		position: initial;
+	}
+
+	:global(html[lang="ar"]) .ServiceCard .coming-soon > p {
+		transform: initial;
+		left: initial;
+		right: 50%;
+	}
+
+	.service_heading{
+		font-size: 16px;
+	}
+
+	.ServiceCard > p {
+		width: 100%;
+		padding: 0 10px;
+	}
+}

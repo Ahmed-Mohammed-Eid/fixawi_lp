@@ -40,3 +40,43 @@
     transition: 0.3s;
     text-transform: uppercase;
 }
+
+:global(html[lang="ar"]) .footer {
+    background-image: linear-gradient(-135deg, #000000 , var(--website-color));
+}
+
+:global(html[lang="ar"]) .footer .paragraph {
+    text-align: right;
+}
+
+:global(html[lang="ar"]) .rights {
+    text-align: right;
+}
+
+:global(html[lang="ar"]) .link {
+    text-align: right;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 40px 10px 20px;
+    }
+
+    .footer .paragraph {
+        font-size: 1rem;
+    }
+
+    .rights {
+        font-size: 1rem;
+    }
+
+    .links {
+        gap: 20px;
+    }
+
+    .link {
+        font-size: 1rem;
+    }
+}

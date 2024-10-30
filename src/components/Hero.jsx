@@ -26,12 +26,12 @@ export default function Hero() {
 						alt="logo"
 						width={350}
 						height={200}
-						className="block mb-[80px] mt-[163px]"
+						className={"block md:mb-[80px] md:mt-[163px] mt-[100px] mb-[40px] " + classes.Hero_logo}
 					/>
 				</Link>
 
 				<p className={classes.Hero_paragraph}>
-					<span className="text-bold text-[34px]">
+					<span className="text-bold text-[22px] lg:text-[34px]">
 						{t("Hero.heroTextBold")}
 					</span>
 					{t("Hero.heroText")}
@@ -46,7 +46,7 @@ export default function Hero() {
 							height={73.57}
 						/>
 					</Link>
-					<div className="w-[73.57px] bg-white">
+					<div className={"w-[73.57px] bg-white " + classes.qr}>
 						<Image
 							src={appStoreQR}
 							alt="app store"
@@ -62,7 +62,7 @@ export default function Hero() {
 							height={73.57}
 						/>
 					</Link>
-					<div className="w-[73.57px] bg-white">
+					<div className={"w-[73.57px] bg-white " + classes.qr}>
 						<Image
 							src={playStoreQR}
 							alt="play store"

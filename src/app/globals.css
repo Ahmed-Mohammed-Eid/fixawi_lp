@@ -19,11 +19,12 @@
 html[lang="ar"] {
 	--heading-font: "IBM Plex Sans Arabic", sans-serif;
 	--main-font: "Tajawal", sans-serif;
-	--secondary-font: "Amiri", serif;
+	--secondary-font: "Tajawal", sans-serif;
+	/*--secondary-font: "Amiri", serif;*/
 }
 
 body {
-	font-family: var(--main-font);
+	font-family: var(--main-font), sans-serif;
 	background-color: var(--body-bg);
 }
 
@@ -79,4 +80,63 @@ html {
 
 ::-webkit-scrollbar-track {
 	background: var(--inactive-color);
+}
+
+
+/* MAIN */
+main{
+	background-image: url("/pattern.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.break__line{
+	position: relative;
+	width: 100%;
+	height: 1px;
+	background-color: var(--website-color);
+	margin: 20px 0 30px;
+}
+
+.break__line::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 1px;
+	height: 20px;
+	background-color: var(--website-color);
+	transform: translate(0, -50%);
+}
+
+.break__line::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 1px;
+	height: 20px;
+	background-color: var(--website-color);
+	transform: translate(0, -50%);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+	.fx-container {
+		padding: 0 30px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.fx-container {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.fx-container {
+		padding: 0 10px;
+	}
 }

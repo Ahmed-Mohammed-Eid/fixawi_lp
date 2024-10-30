@@ -9,9 +9,11 @@ export default function HowToUse() {
 	const t = useTranslations();
 
 	return (
-		<section id="HowToUse" className={`${classes.HowToUse} p-10`}>
+		<section id="HowToUse" className={`${classes.HowToUse} p-3 md:p-10`}>
 			<div className="fx-container mx-auto">
-				<h2 className={classes.HowToUse_heading}>How To Use</h2>
+				<h2 className={classes.HowToUse_heading}>
+					{t("HowToUse.heading")}
+				</h2>
 				<div className={classes.HowToUse_Container}>
 					<div className={classes.HowToUse_Image}>
 						<Image src={MobileImage} alt={"How to use"} width={230} height={500} />

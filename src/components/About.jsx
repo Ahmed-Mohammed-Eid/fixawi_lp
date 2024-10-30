@@ -20,7 +20,7 @@ export default function About() {
     const t = useTranslations();
 
     return (
-        <section id="About" className={"p-10"}>
+        <section id="About" className={"p-3 md:p-10"}>
             <div className={classes.About + " fx-container"}>
                 <h2>
                     {t("About.title")}
@@ -29,7 +29,6 @@ export default function About() {
                     <Swiper
                         modules={[Pagination, Autoplay]}
                         spaceBetween={20}
-                        slidesPerView={3}
                         pagination={{clickable: true}}
                         autoplay={{
                             delay: 2500,
@@ -95,6 +94,9 @@ export default function About() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
+
+                <div className={"break__line"}></div>
+
                 <div className={classes.AboutStatic}>
                     <AboutCard
                         title={t("About.staticCards.1.title")}

@@ -1,5 +1,5 @@
 .About {
-	height: 100dvh;
+	min-height: 100dvh;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -11,6 +11,7 @@
 	color: var(--website-color);
 	text-align: center;
 	margin-bottom: 50px;
+	margin-top: 30px;
 	text-transform: uppercase;
 }
 
@@ -26,4 +27,17 @@
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+}
+
+@media screen and (max-width: 1024px){
+	.About h2 {
+		font-size: 40px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.AboutStatic {
+		flex-direction: column;
+	}
 }

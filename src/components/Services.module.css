@@ -1,12 +1,13 @@
 /* SERVICES */
 
 .Services {
-	height: 100dvh;
+	min-height: 100svh;
 }
 
 .Services_heading {
 	font-family: var(--main-font), cursive;
 	font-size: 40px;
+	margin-top: 30px;
 	color: #000000;
 	margin-bottom: 50px;
 }
@@ -15,4 +16,15 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.Services_list {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.Services_heading {
+		text-align: center;
+		font-size: 40px;
+	}
 }
