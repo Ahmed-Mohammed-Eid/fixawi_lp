@@ -1,7 +1,6 @@
 /* HERO */
 .Hero {
-	background-image: linear-gradient(135deg, #000000, #2b4e9790),
-		url("../assets/hero_background.png");
+	background-image: url("../assets/hero_background_copy.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -31,8 +30,7 @@
 
 
 :global(html[lang="ar"]) .Hero {
-	background-image: linear-gradient(-135deg, #000000, #2b4e9790),
-		url("../assets/hero_background.png");}
+	background-image: url("../assets/hero_background_copy.png");}
 
 
 @media (max-width: 1024px) {
