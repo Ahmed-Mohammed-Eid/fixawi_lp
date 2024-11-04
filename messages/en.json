@@ -8,13 +8,13 @@
 	},
 	"Hero": {
 		"heroTextBold": "FIXAWI",
-		"heroText": " is a trusted car service app connecting vehicle owners with reliable service providers. We offer a wide range of automotive services, including repairs, maintenance, insurance, and roadside assistance. With FIXAWI, you can easily find, book, and manage all your car care needs through a convenient, user-friendly platform focused on quality and convenience."
+		"heroText": " is a trusted car service app connecting vehicle owners with reliable service providers. We offer a wide range of automotive services, including maintenance & repairs, Spare parts, insurance, and more!. With FIXAWI, you can easily find, book, and manage all your car care needs through a convenient, user-friendly platform focused on quality and convenience."
 	},
 	"Services": {
 		"heading": "Services",
 		"S1": {
 			"title": "Service Centers Map",
-			"content": "Access a map displaying nearby service centers, categorized by type (mechanics, tire shops, etc.). Filter results based on service type, ratings, and price points to find the best option for your needs. With customer reviews and ratings, you can make informed decisions about where to get your car serviced."
+			"content": "Locate and book top-rated service centers nearby, categorized by type (mechanics, tire shops, etc.). Filter based on service type, ratings, and price points to find the best option for your needs. With customer reviews and ratings, you can make informed decisions about where to get your car serviced."
 		},
 		"S2": {
 			"title": "Insurance Services",
@@ -30,7 +30,7 @@
 		},
 		"Soon": {
 			"title": "Portable Car Maintenance",
-			"content": "Need car maintenance on the go? Fixawi’s fleet of equipped vehicles provides on-spot services such as tire changes, battery replacements, and minor repairs. Use the app to schedule a service and track the technician’s arrival in real time. All technicians are certified to guarantee quality.",
+			"content": "Convenient Service, Anytime, Anywhere, Fixawi’s fleet of equipped vehicles provides on-spot services such as tire changes, battery replacements, and minor repairs. Use the app to schedule a service and track the technician’s arrival in real time. All technicians are certified to guarantee quality.",
 			"soon": "Coming soon"
 		}
 	},
@@ -40,7 +40,7 @@
 			"1": {
 				"title": "Ease of booking",
 				"slogan": "“Your car's service, a tap away.”",
-				"content": "Book car services with unparalleled ease using Fixawi."
+				"content": "Book car services with unparalleled ease, using Fixawi."
 			},
 			"2": {
 				"title": "Convenience",
@@ -50,7 +50,7 @@
 			"3": {
 				"title": "Peace of Mind",
 				"slogan": "“ Drive happy, stress-free”",
-				"content": " Focus on enjoying your drive, not stressing over car care with Fixawi."
+				"content": "With Fixawi focus on enjoying your drive, without stress."
 			},
 			"4": {
 				"title": "Quality",
@@ -71,11 +71,11 @@
 		"staticCards": {
 			"1": {
 				"title": "Our Mission",
-				"content": "To provide a reliable, convenient, and transparent platform for car owners to access quality automotive services."
+				"content": "Our mission is to revolutionize the car service industry by providing seamless, reliable, and efficient solutions for vehicle owners everywhere. We aim to build long-lasting relationships with our customers through exceptional service, transparency, and trust."
 			},
 			"2": {
 				"title": "Our Vision",
-				"content": "To become the go-to car service app for vehicle owners, offering a seamless experience that prioritizes customer satisfaction."
+				"content": "Our vision is to be the leading global platform for car services, known for our innovation, customer-centric approach, and commitment to sustainability. We envision a world where car maintenance and repair are hassle-free, giving vehicle owners peace of mind and more time to enjoy the journey."
 			}
 		}
 	},
