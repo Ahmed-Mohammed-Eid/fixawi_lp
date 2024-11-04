@@ -8,6 +8,7 @@ import playStoreImage from "../assets/play-store.png";
 import appStoreImage from "../assets/app-store.png";
 import playStoreQR from "../assets/qrcode_play.google.com.png";
 import appStoreQR from "../assets/qrcode_apps.apple.com.png";
+import heroBackground from "../assets/hero_background_copy.png";
 
 import classes from "./Hero.module.css";
 
@@ -20,13 +21,23 @@ export default function Hero() {
 			className={`${classes.Hero} flex justify-start flex-col items-start`}
 		>
 			<div className="fx-container mx-auto">
+				<Image
+					src={heroBackground}
+					alt="Hero background"
+					className={classes.Hero_background}
+					priority
+					fill
+				/>
 				<Link href="/">
 					<Image
 						src={logo}
 						alt="logo"
 						width={350}
 						height={200}
-						className={"block md:mb-[80px] md:mt-[163px] mt-[100px] mb-[40px] " + classes.Hero_logo}
+						className={
+							"block md:mb-[80px] md:mt-[163px] mt-[100px] mb-[40px] " +
+							classes.Hero_logo
+						}
 					/>
 				</Link>
 

@@ -9,7 +9,7 @@ import HowToUse from "@/components/HowToUse";
 import DropANote from "@/components/DropNote";
 import Footer from "@/components/Footer";
 
-export default function HomePage({ params: {locale} }) {
+export default function HomePage({ params: { locale } }) {
 	const t = useTranslations();
 	return (
 		<>
@@ -45,10 +45,10 @@ export default function HomePage({ params: {locale} }) {
 				locale={locale}
 			/>
 			{/* MAIN CONTENT */}
-			<main>
-				{/* HERO */}
-				<Hero locale={locale} />
+			{/* HERO */}
+			<Hero locale={locale} />
 
+			<main>
 				{/* SERVICES */}
 				<Services locale={locale} />
 

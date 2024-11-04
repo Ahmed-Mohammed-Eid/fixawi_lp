@@ -1,12 +1,18 @@
 /* HERO */
 .Hero {
-	background-image: url("../assets/hero_background_copy.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
+	position: relative;
 	min-height: 100svh;
+	overflow: hidden;
+}
+
+.Hero_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
 .Hero_img {
@@ -28,29 +34,22 @@
 	gap: 20px;
 }
 
-
-:global(html[lang="ar"]) .Hero {
-	background-image: url("../assets/hero_background_copy.png");}
-
-
 @media (max-width: 1024px) {
 	.Hero_paragraph {
 		font-size: 20px;
 	}
 
-	.qr{
+	.qr {
 		display: none;
 	}
 
-	.Store_buttons{
+	.Store_buttons {
 		margin-top: 50px;
 	}
 }
 
-
 @media (max-width: 768px) {
-
-	.Hero_logo{
+	.Hero_logo {
 		width: 300px;
 		margin-inline: auto;
 	}
