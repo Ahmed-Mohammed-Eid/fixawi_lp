@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 // Components
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import HowToUse from "@/components/HowToUse";
@@ -60,6 +61,9 @@ export default function HomePage({ params: { locale } }) {
 
 				{/* DROP A NOTE */}
 				<DropANote locale={locale} />
+
+				{/* PARTNERS */}
+				{/* <Partners /> */}
 
 				{/* FOOTER */}
 				<Footer locale={locale} />

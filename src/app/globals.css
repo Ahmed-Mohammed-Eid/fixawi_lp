@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Fjalla+One&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap  ");
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +13,7 @@
 	--inactive-color: #d3cccc;
 	--active-color: #ffffff;
 	--website-color: #2b4e97;
-	--body-bg: #F3F8FF;
+	--body-bg: #f3f8ff;
 }
 
 html[lang="ar"] {
@@ -47,16 +47,16 @@ html {
 }
 
 /* SWIPER */
-.swiper{
+.swiper {
 	padding: 50px 0 20px !important;
 }
 
-.swiper-pagination{
+.swiper-pagination {
 	top: 0 !important;
 	bottom: auto !important;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
 	width: 40px !important;
 	height: 8px !important;
 	border-radius: 0 !important;
@@ -82,16 +82,15 @@ html {
 	background: var(--inactive-color);
 }
 
-
 /* MAIN */
-main{
+main {
 	background-image: url("/pattern.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-.break__line{
+.break__line {
 	position: relative;
 	width: 100%;
 	height: 1px;
@@ -99,7 +98,7 @@ main{
 	margin: 20px 0 30px;
 }
 
-.break__line::before{
+.break__line::before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -110,7 +109,7 @@ main{
 	transform: translate(0, -50%);
 }
 
-.break__line::after{
+.break__line::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -139,4 +138,9 @@ main{
 	.fx-container {
 		padding: 0 10px;
 	}
+}
+
+/* PARTNERS */
+.partners-swiper-initialized {
+	padding: 15px 0 !important;
 }
