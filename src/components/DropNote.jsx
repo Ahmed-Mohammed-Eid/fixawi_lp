@@ -141,7 +141,7 @@ export default function DropANote() {
 									/>
 								</Link>
 							</div>
-							<div className={classes.icon}>
+							{/* <div className={classes.icon}>
 								<Link href={"https://wa.me/201000000000"}>
 									<Image
 										src={"/whatsapp-alt.svg"}
@@ -150,7 +150,7 @@ export default function DropANote() {
 										height={40}
 									/>
 								</Link>
-							</div>
+							</div> */}
 							<div className={classes.icon}>
 								<Link
 									href={"https://www.youtube.com/@Fixawi"}

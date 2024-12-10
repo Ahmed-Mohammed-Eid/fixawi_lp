@@ -24,13 +24,13 @@ export default function Footer({ locale }) {
 						}
 					>
 						<Link
-							href={`/${locale}/terms`}
+							href={`/${locale}/terms-and-conditions`}
 							className={classes.link}
 						>
 							{t("Footer.terms")}
 						</Link>
 						<Link
-							href={`/${locale}/terms`}
+							href={`/${locale}/privacy-policies`}
 							className={classes.link}
 						>
 							{t("Footer.privacy")}

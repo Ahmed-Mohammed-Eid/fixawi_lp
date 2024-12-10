@@ -1,12 +1,12 @@
 import React from "react";
-import classes from "./TermsAndConditions.module.css";
+import classes from "./PrivacyPolicies.module.css";
 import logo from "../assets/text-based-logo-1.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 const PrivacyPolicies = () => {
-	const t = useTranslations("TermsAndConditions");
+	const t = useTranslations("PrivacyPolicy");
 
 	return (
 		<div className={classes.termsContainer}>
@@ -24,7 +24,7 @@ const PrivacyPolicies = () => {
 			<p className={classes.introText}>{t("intro")}</p>
 
 			{/* Dynamically render all sections */}
-			{[...Array(15)].map((_, index) => {
+			{[...Array(10)].map((_, index) => {
 				const sectionNum = index + 1;
 				return (
 					<div key={sectionNum} className={classes.section}>

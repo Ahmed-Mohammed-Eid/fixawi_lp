@@ -103,5 +103,225 @@
 		"rights": "© 2024 Fixawi. All rights reserved.",
 		"terms": "TERMS AND CONDITIONS",
 		"privacy": "PRIVACY POLICES"
+	},
+	"PrivacyPolicy": {
+		"title": "Our Privacy Policy",
+		"effectiveDate": "Effective Date: [10/1/2024]",
+		"intro": "At Fixawi, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you interact with our website, mobile app, or any affiliated platforms.",
+		"sections": {
+			"1": {
+				"title": "Information We Collect",
+				"content": [
+					"Personal Information: Name, phone number, email address, residence area, and details about your transportation vehicle (if applicable).",
+					"Usage Data: Information about how you interact with our website or app, including pages visited, time spent, and features used.",
+					"Device Information: IP address, device type, operating system, and browser details.",
+					"Location Data: Your geolocation, if you enable this feature on our app or website."
+				]
+			},
+			"2": {
+				"title": "How We Use Your Information",
+				"content": [
+					"To provide and improve Fixawi’s services.",
+					"To process your inquiries, bookings, and other requests.",
+					"To personalize your experience by recommending relevant services.",
+					"To analyze and enhance the performance of our website and app.",
+					"To communicate with you regarding updates, promotions, and offers.",
+					"To ensure compliance with legal obligations and resolve disputes."
+				]
+			},
+			"3": {
+				"title": "Third-Party Integrations",
+				"content": [
+					"Payment processors to handle transactions securely.",
+					"Marketing or analytics platforms to improve advertising strategies.",
+					"Service providers such as towing companies, insurance providers, or repair centers.",
+					"We ensure that all third-party partners comply with applicable privacy laws and protect your information. You will be notified if we engage with any additional third parties beyond those mentioned here."
+				]
+			},
+			"4": {
+				"title": "Sharing Your Information",
+				"content": [
+					"With Partners: To connect you with relevant service providers, such as car repair centers or insurance companies.",
+					"For Legal Compliance: If required by law, regulation, or government request.",
+					"For Business Transactions: In the event of a merger, acquisition, or sale of assets, your information may be transferred to the new entity.",
+					"We will not sell or rent your personal information to third parties."
+				]
+			},
+			"5": {
+				"title": "Data Storage and Security",
+				"content": [
+					"Google Admin Console for secure data management.",
+					"Meta Business Suite and Ads Manager for secure lead generation and marketing campaigns.",
+					"Encrypted servers to store and process your data.",
+					"Data is retained only for as long as necessary to fulfill the purposes outlined in this policy or as required by law."
+				]
+			},
+			"6": {
+				"title": "Your Rights",
+				"content": [
+					"Access and Portability: Request a copy of your data in a portable format.",
+					"Correction: Update or correct inaccurate information.",
+					"Deletion: Request the deletion of your data, subject to legal and operational requirements.",
+					"Consent Withdrawal: Withdraw your consent to data collection or specific uses.",
+					"Opt-Out: Choose not to receive promotional communications.",
+					"To exercise these rights, contact us at support@fixawi.com."
+				]
+			},
+			"7": {
+				"title": "Cookies and Tracking",
+				"content": [
+					"Essential Cookies: Required for core website or app functionality.",
+					"Analytics Cookies: Help us understand how users interact with Fixawi.",
+					"Advertising Cookies: Deliver personalized ads based on your preferences.",
+					"You can manage your cookie preferences through your browser settings."
+				]
+			},
+			"8": {
+				"title": "Future Updates and Expansions",
+				"content": [
+					"As Fixawi grows, we may expand our services, partner with new third parties, or introduce new features. These changes may require updates to this Privacy Policy. By continuing to use Fixawi after any updates, you acknowledge and agree to the revised policy.",
+					"Provisions for Updates:",
+					"1. New third-party integrations will be covered under the existing terms, ensuring all partners adhere to privacy regulations.",
+					"2. Future services (e.g., insurance, mobile payments, or roadside assistance) will follow the same data security and usage protocols outlined in this policy.",
+					"We will notify users of significant changes through email notifications, app or website announcements, or updated versions of this Privacy Policy accessible on our platform."
+				]
+			},
+			"9": {
+				"title": "Contact Information",
+				"content": "If you have questions about this Privacy Policy or how Fixawi handles your data, please contact us at support@fixawi.com."
+			},
+			"10": {
+				"title": "Effective Date",
+				"content": "This policy is effective as of [10/1/2024]. By using Fixawi, you consent to the collection, use, and sharing of your information as outlined above."
+			}
+		}
+	},
+	"TermsAndConditions": {
+		"title": "Terms and Conditions",
+		"effectiveDate": "Effective Date: [10/1/2024]",
+		"intro": "Welcome to Fixawi! By using our app, website, or services, you agree to these Terms and Conditions. Please read them carefully before proceeding. If you do not agree to these terms, you may not use our platform.",
+		"sections": {
+			"1": {
+				"title": "Overview of Fixawi Services",
+				"content": [
+					"Map-Based Service Center Locator: Users can locate car service centers (e.g., maintenance, car care, oil change) and interact with premium service centers offering bookings and guaranteed quality.",
+					"Car Spare Parts and Retail Shops: Explore and purchase spare parts categorized by brand, manufacturing year, and quality, with flexible refund options for eligible purchases.",
+					"Towing Service (Winch): Order emergency towing services directly from the app.",
+					"Insurance Quotas and Marketing: Access insurance offers from broker partners.",
+					"Portable Car Services: Request car maintenance services at your home or preferred location.",
+					"Payment Solutions: Secure payments through Paymob’s payment gateway, offering multiple payment methods."
+				]
+			},
+			"2": {
+				"title": "User Responsibilities",
+				"content": [
+					"Provide accurate and up-to-date information when registering or booking services.",
+					"Comply with all local laws and regulations when using Fixawi’s services.",
+					"Treat Fixawi’s staff, partners, and service providers with respect.",
+					"Use Fixawi’s platform only for lawful purposes and not for fraudulent or malicious activities."
+				]
+			},
+			"3": {
+				"title": "Service Center Premium Listings",
+				"content": [
+					"Fixawi features Premium Service Centers that meet specific quality and service standards.",
+					"Premium centers may offer additional booking options, including scheduling appointments or direct visits.",
+					"Fixawi does not directly own or manage service centers and is not liable for their actions or omissions. However, Fixawi ensures that premium centers meet strict criteria to provide high-quality services."
+				]
+			},
+			"4": {
+				"title": "Spare Parts and Refunds",
+				"content": [
+					"Spare parts are categorized as original parts and non-original parts with detailed specifications (e.g., brand, manufacturing year).",
+					"Fixawi is not the direct seller of parts but acts as a facilitator between users and spare parts vendors.",
+					"Refund Policy: Refunds are subject to vendor-specific terms. Users must comply with refund conditions outlined by the vendor (e.g., return timelines, proof of purchase).",
+					"Fixawi will mediate disputes if necessary to ensure fair treatment."
+				]
+			},
+			"5": {
+				"title": "Towing Services (Winch)",
+				"content": [
+					"Users can request towing services for emergencies through Fixawi’s platform.",
+					"The towing service is provided by independent third-party operators.",
+					"Fixawi is not liable for delays, damages, or other issues arising during towing services. However, Fixawi will work to resolve complaints with the provider on behalf of the user."
+				]
+			},
+			"6": {
+				"title": "Insurance Marketing and Brokerage",
+				"content": [
+					"Fixawi markets insurance products offered by broker partners.",
+					"All insurance policies are subject to the terms and conditions of the respective broker or insurance company.",
+					"Fixawi is not responsible for claims, disputes, or policy management after the user purchases an insurance product."
+				]
+			},
+			"7": {
+				"title": "Portable Car Services",
+				"content": [
+					"Users can book portable car services to be performed at their home or preferred location.",
+					"Services must be requested through the Fixawi app and scheduled as per availability.",
+					"Portable services are offered by third-party technicians. Fixawi ensures these providers meet quality standards but is not directly responsible for their actions."
+				]
+			},
+			"8": {
+				"title": "Payment Solutions",
+				"content": [
+					"Fixawi uses Paymob as its payment gateway to facilitate secure and flexible payment options.",
+					"Payment methods include credit cards, debit cards, and other digital payment options.",
+					"Fixawi does not store payment details; all transactions are processed securely by Paymob.",
+					"In case of payment disputes, users should contact Fixawi support immediately."
+				]
+			},
+			"9": {
+				"title": "Limitation of Liability",
+				"content": [
+					"Fixawi is a facilitator connecting users with service providers (e.g., service centers, tow operators, spare part vendors). We are not directly responsible for the performance, quality, or delays caused by third-party providers.",
+					"Fixawi’s liability is limited to mediating disputes and ensuring compliance with service agreements.",
+					"Fixawi is not liable for:",
+					"o Any damage to vehicles during service or towing.",
+					"o Misuse or incorrect installation of spare parts.",
+					"o Delays caused by third-party providers."
+				]
+			},
+			"10": {
+				"title": "Intellectual Property",
+				"content": [
+					"All content on Fixawi’s app and website, including logos, designs, text, and graphics, is the exclusive property of Fixawi.",
+					"Users are prohibited from copying, modifying, or distributing Fixawi’s intellectual property without explicit written consent."
+				]
+			},
+			"11": {
+				"title": "Service Availability",
+				"content": [
+					"Fixawi strives to ensure uninterrupted access to its platform. However, we do not guarantee continuous availability due to potential technical issues, updates, or third-party service disruptions."
+				]
+			},
+			"12": {
+				"title": "Termination of Use",
+				"content": [
+					"Fixawi reserves the right to suspend or terminate user accounts for violations of these Terms and Conditions.",
+					"Refuse access to the platform for fraudulent or malicious activities.",
+					"Remove inappropriate or fraudulent content submitted by users."
+				]
+			},
+			"13": {
+				"title": "Dispute Resolution",
+				"content": [
+					"Any disputes arising from the use of Fixawi’s platform will be resolved amicably. Users can contact Fixawi support at support@fixawi.com for assistance.",
+					"If disputes cannot be resolved informally, they will be subject to the jurisdiction of the courts of [Egypt]."
+				]
+			},
+			"14": {
+				"title": "Updates to Terms and Conditions",
+				"content": [
+					"Fixawi reserves the right to update these Terms and Conditions to reflect changes in services, regulations, or business practices.",
+					"Users will be notified of significant changes via email notifications, app or website announcements.",
+					"By continuing to use Fixawi after updates, you agree to the revised terms."
+				]
+			},
+			"15": {
+				"title": "Contact Information",
+				"content": "For questions or concerns regarding these Terms and Conditions, please contact us at support@fixawi.com."
+			}
+		}
 	}
 }
