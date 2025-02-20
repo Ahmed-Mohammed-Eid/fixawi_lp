@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
-import logo from "../assets/text-based-logo-1-white.svg";
+import logo from "../assets/Layer_1@2x.svg";
 import playStoreImage from "../assets/play-store.png";
 import appStoreImage from "../assets/app-store.png";
 import playStoreQR from "../assets/qrcode_play.google.com.png";

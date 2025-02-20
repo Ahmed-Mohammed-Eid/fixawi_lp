@@ -7,8 +7,8 @@
 		"Contact": "Contact us"
 	},
 	"Hero": {
-		"heroTextBold": "FIXAWI",
-		"heroText": " is a trusted car service app connecting vehicle owners with reliable service providers. We offer a wide range of automotive services, including maintenance & repairs, Spare parts, insurance, and more!. With FIXAWI, you can easily find, book, and manage all your car care needs through a convenient, user-friendly platform focused on quality and convenience."
+		"heroTextBold": "Sayyn",
+		"heroText": " is a trusted car service app connecting vehicle owners with reliable service providers. We offer a wide range of automotive services, including maintenance & repairs, Spare parts, insurance, and more!. With Sayyn, you can easily find, book, and manage all your car care needs through a convenient, user-friendly platform focused on quality and convenience."
 	},
 	"Services": {
 		"heading": "Services",
@@ -18,54 +18,54 @@
 		},
 		"S2": {
 			"title": "Insurance Services",
-			"content": "Easily renew or issue new car insurance policies through our integrated insurance broker service. Fixawi partners with reputable insurance providers to offer competitive rates. We also simplify the claims process by handling communication between service centers and insurance companies."
+			"content": "Easily renew or issue new car insurance policies through our integrated insurance broker service. Sayyn partners with reputable insurance providers to offer competitive rates. We also simplify the claims process by handling communication between service centers and insurance companies."
 		},
 		"S3": {
 			"title": "Emergency Assistance (WINCH)",
-			"content": "For major breakdowns, Fixawi’s 24/7 winch service will tow your vehicle to the nearest service center. We partner with trusted winch providers to ensure fast, reliable assistance, no matter where you are."
+			"content": "For major breakdowns, Sayyn’s 24/7 winch service will tow your vehicle to the nearest service center. We partner with trusted winch providers to ensure fast, reliable assistance, no matter where you are."
 		},
 		"S4": {
 			"title": "Store to Door",
-			"content": "Need a part or accessory for your vehicle? Fixawi’s store-to-door service delivers car parts and accessories right to your doorstep. Browse our catalog, place an order, and have your items delivered hassle-free."
+			"content": "Need a part or accessory for your vehicle? Sayyn’s store-to-door service delivers car parts and accessories right to your doorstep. Browse our catalog, place an order, and have your items delivered hassle-free."
 		},
 		"Soon": {
 			"title": "Portable Car Maintenance",
-			"content": "Convenient Service, Anytime, Anywhere, Fixawi’s fleet of equipped vehicles provides on-spot services such as tire changes, battery replacements, and minor repairs. Use the app to schedule a service and track the technician’s arrival in real time. All technicians are certified to guarantee quality.",
+			"content": "Convenient Service, Anytime, Anywhere, Sayyn’s fleet of equipped vehicles provides on-spot services such as tire changes, battery replacements, and minor repairs. Use the app to schedule a service and track the technician’s arrival in real time. All technicians are certified to guarantee quality.",
 			"soon": "Coming soon"
 		}
 	},
 	"About": {
-		"title": "Why Fixawi?",
+		"title": "Why Sayyn?",
 		"cards": {
 			"1": {
 				"title": "Ease of booking",
 				"slogan": "“Your car's service, a tap away.”",
-				"content": "Book car services with unparalleled ease, using Fixawi."
+				"content": "Book car services with unparalleled ease, using Sayyn."
 			},
 			"2": {
 				"title": "Convenience",
 				"slogan": "“All-in-one, all for you”",
-				"content": "Fixawi handles all your car maintenance needs in one app."
+				"content": "Sayyn handles all your car maintenance needs in one app."
 			},
 			"3": {
 				"title": "Peace of Mind",
 				"slogan": "“ Drive happy, stress-free”",
-				"content": "With Fixawi focus on enjoying your drive, without stress."
+				"content": "With Sayyn focus on enjoying your drive, without stress."
 			},
 			"4": {
 				"title": "Quality",
 				"slogan": "“Top service, every time”",
-				"content": "Fixawi provides expert services that meet high standards."
+				"content": "Sayyn provides expert services that meet high standards."
 			},
 			"5": {
 				"title": "Availability",
 				"slogan": "“Always there, day and night”",
-				"content": "Easy booking and 24/7 service access with Fixawi."
+				"content": "Easy booking and 24/7 service access with Sayyn."
 			},
 			"6": {
 				"title": "Transparency",
 				"slogan": "“ Clear prices, no surprises”",
-				"content": " Fixawi offers clear, upfront pricing with no surprises."
+				"content": " Sayyn offers clear, upfront pricing with no surprises."
 			}
 		},
 		"staticCards": {
@@ -90,7 +90,7 @@
 	},
 	"DropANote": {
 		"title": "Drop a note",
-		"summary": "We'd love to hear from you! Whether you have suggestions, questions, or just want to drop us a note, your feedback is invaluable. Help us make Fixawi even better by sharing your thoughts. Don't hesitate—your opinion truly matters to us!",
+		"summary": "We'd love to hear from you! Whether you have suggestions, questions, or just want to drop us a note, your feedback is invaluable. Help us make Sayyn even better by sharing your thoughts. Don't hesitate—your opinion truly matters to us!",
 		"fName": "First Name",
 		"lName": "Last Name",
 		"email": "Email",
@@ -99,15 +99,15 @@
 		"send": "Send"
 	},
 	"Footer": {
-		"paragraph": "Fixawi is a private owned company focused on simplifying car Services for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices.\n\n",
-		"rights": "© 2024 Fixawi. All rights reserved.",
+		"paragraph": "Sayyn is a private owned company focused on simplifying car Services for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices.\n\n",
+		"rights": "© 2024 Sayyn. All rights reserved.",
 		"terms": "TERMS AND CONDITIONS",
 		"privacy": "PRIVACY POLICES"
 	},
 	"PrivacyPolicy": {
 		"title": "Our Privacy Policy",
 		"effectiveDate": "Effective Date: [10/1/2024]",
-		"intro": "At Fixawi, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you interact with our website, mobile app, or any affiliated platforms.",
+		"intro": "At Sayyn, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you interact with our website, mobile app, or any affiliated platforms.",
 		"sections": {
 			"1": {
 				"title": "Information We Collect",
@@ -121,7 +121,7 @@
 			"2": {
 				"title": "How We Use Your Information",
 				"content": [
-					"To provide and improve Fixawi’s services.",
+					"To provide and improve Sayyn’s services.",
 					"To process your inquiries, bookings, and other requests.",
 					"To personalize your experience by recommending relevant services.",
 					"To analyze and enhance the performance of our website and app.",
@@ -164,14 +164,14 @@
 					"Deletion: Request the deletion of your data, subject to legal and operational requirements.",
 					"Consent Withdrawal: Withdraw your consent to data collection or specific uses.",
 					"Opt-Out: Choose not to receive promotional communications.",
-					"To exercise these rights, contact us at support@fixawi.com."
+					"To exercise these rights, contact us at cs@sayyn.net."
 				]
 			},
 			"7": {
 				"title": "Cookies and Tracking",
 				"content": [
 					"Essential Cookies: Required for core website or app functionality.",
-					"Analytics Cookies: Help us understand how users interact with Fixawi.",
+					"Analytics Cookies: Help us understand how users interact with Sayyn.",
 					"Advertising Cookies: Deliver personalized ads based on your preferences.",
 					"You can manage your cookie preferences through your browser settings."
 				]
@@ -179,7 +179,7 @@
 			"8": {
 				"title": "Future Updates and Expansions",
 				"content": [
-					"As Fixawi grows, we may expand our services, partner with new third parties, or introduce new features. These changes may require updates to this Privacy Policy. By continuing to use Fixawi after any updates, you acknowledge and agree to the revised policy.",
+					"As Sayyn grows, we may expand our services, partner with new third parties, or introduce new features. These changes may require updates to this Privacy Policy. By continuing to use Sayyn after any updates, you acknowledge and agree to the revised policy.",
 					"Provisions for Updates:",
 					"1. New third-party integrations will be covered under the existing terms, ensuring all partners adhere to privacy regulations.",
 					"2. Future services (e.g., insurance, mobile payments, or roadside assistance) will follow the same data security and usage protocols outlined in this policy.",
@@ -188,21 +188,21 @@
 			},
 			"9": {
 				"title": "Contact Information",
-				"content": "If you have questions about this Privacy Policy or how Fixawi handles your data, please contact us at support@fixawi.com."
+				"content": "If you have questions about this Privacy Policy or how Sayyn handles your data, please contact us at cs@sayyn.net."
 			},
 			"10": {
 				"title": "Effective Date",
-				"content": "This policy is effective as of [10/1/2024]. By using Fixawi, you consent to the collection, use, and sharing of your information as outlined above."
+				"content": "This policy is effective as of [10/1/2024]. By using Sayyn, you consent to the collection, use, and sharing of your information as outlined above."
 			}
 		}
 	},
 	"TermsAndConditions": {
 		"title": "Terms and Conditions",
 		"effectiveDate": "Effective Date: [10/1/2024]",
-		"intro": "Welcome to Fixawi! By using our app, website, or services, you agree to these Terms and Conditions. Please read them carefully before proceeding. If you do not agree to these terms, you may not use our platform.",
+		"intro": "Welcome to Sayyn! By using our app, website, or services, you agree to these Terms and Conditions. Please read them carefully before proceeding. If you do not agree to these terms, you may not use our platform.",
 		"sections": {
 			"1": {
-				"title": "Overview of Fixawi Services",
+				"title": "Overview of Sayyn Services",
 				"content": [
 					"Map-Based Service Center Locator: Users can locate car service centers (e.g., maintenance, car care, oil change) and interact with premium service centers offering bookings and guaranteed quality.",
 					"Car Spare Parts and Retail Shops: Explore and purchase spare parts categorized by brand, manufacturing year, and quality, with flexible refund options for eligible purchases.",
@@ -216,67 +216,67 @@
 				"title": "User Responsibilities",
 				"content": [
 					"Provide accurate and up-to-date information when registering or booking services.",
-					"Comply with all local laws and regulations when using Fixawi’s services.",
-					"Treat Fixawi’s staff, partners, and service providers with respect.",
-					"Use Fixawi’s platform only for lawful purposes and not for fraudulent or malicious activities."
+					"Comply with all local laws and regulations when using Sayyn’s services.",
+					"Treat Sayyn’s staff, partners, and service providers with respect.",
+					"Use Sayyn’s platform only for lawful purposes and not for fraudulent or malicious activities."
 				]
 			},
 			"3": {
 				"title": "Service Center Premium Listings",
 				"content": [
-					"Fixawi features Premium Service Centers that meet specific quality and service standards.",
+					"Sayyn features Premium Service Centers that meet specific quality and service standards.",
 					"Premium centers may offer additional booking options, including scheduling appointments or direct visits.",
-					"Fixawi does not directly own or manage service centers and is not liable for their actions or omissions. However, Fixawi ensures that premium centers meet strict criteria to provide high-quality services."
+					"Sayyn does not directly own or manage service centers and is not liable for their actions or omissions. However, Sayyn ensures that premium centers meet strict criteria to provide high-quality services."
 				]
 			},
 			"4": {
 				"title": "Spare Parts and Refunds",
 				"content": [
 					"Spare parts are categorized as original parts and non-original parts with detailed specifications (e.g., brand, manufacturing year).",
-					"Fixawi is not the direct seller of parts but acts as a facilitator between users and spare parts vendors.",
+					"Sayyn is not the direct seller of parts but acts as a facilitator between users and spare parts vendors.",
 					"Refund Policy: Refunds are subject to vendor-specific terms. Users must comply with refund conditions outlined by the vendor (e.g., return timelines, proof of purchase).",
-					"Fixawi will mediate disputes if necessary to ensure fair treatment."
+					"Sayyn will mediate disputes if necessary to ensure fair treatment."
 				]
 			},
 			"5": {
 				"title": "Towing Services (Winch)",
 				"content": [
-					"Users can request towing services for emergencies through Fixawi’s platform.",
+					"Users can request towing services for emergencies through Sayyn’s platform.",
 					"The towing service is provided by independent third-party operators.",
-					"Fixawi is not liable for delays, damages, or other issues arising during towing services. However, Fixawi will work to resolve complaints with the provider on behalf of the user."
+					"Sayyn is not liable for delays, damages, or other issues arising during towing services. However, Sayyn will work to resolve complaints with the provider on behalf of the user."
 				]
 			},
 			"6": {
 				"title": "Insurance Marketing and Brokerage",
 				"content": [
-					"Fixawi markets insurance products offered by broker partners.",
+					"Sayyn markets insurance products offered by broker partners.",
 					"All insurance policies are subject to the terms and conditions of the respective broker or insurance company.",
-					"Fixawi is not responsible for claims, disputes, or policy management after the user purchases an insurance product."
+					"Sayyn is not responsible for claims, disputes, or policy management after the user purchases an insurance product."
 				]
 			},
 			"7": {
 				"title": "Portable Car Services",
 				"content": [
 					"Users can book portable car services to be performed at their home or preferred location.",
-					"Services must be requested through the Fixawi app and scheduled as per availability.",
-					"Portable services are offered by third-party technicians. Fixawi ensures these providers meet quality standards but is not directly responsible for their actions."
+					"Services must be requested through the Sayyn app and scheduled as per availability.",
+					"Portable services are offered by third-party technicians. Sayyn ensures these providers meet quality standards but is not directly responsible for their actions."
 				]
 			},
 			"8": {
 				"title": "Payment Solutions",
 				"content": [
-					"Fixawi uses Paymob as its payment gateway to facilitate secure and flexible payment options.",
+					"Sayyn uses Paymob as its payment gateway to facilitate secure and flexible payment options.",
 					"Payment methods include credit cards, debit cards, and other digital payment options.",
-					"Fixawi does not store payment details; all transactions are processed securely by Paymob.",
-					"In case of payment disputes, users should contact Fixawi support immediately."
+					"Sayyn does not store payment details; all transactions are processed securely by Paymob.",
+					"In case of payment disputes, users should contact Sayyn support immediately."
 				]
 			},
 			"9": {
 				"title": "Limitation of Liability",
 				"content": [
-					"Fixawi is a facilitator connecting users with service providers (e.g., service centers, tow operators, spare part vendors). We are not directly responsible for the performance, quality, or delays caused by third-party providers.",
-					"Fixawi’s liability is limited to mediating disputes and ensuring compliance with service agreements.",
-					"Fixawi is not liable for:",
+					"Sayyn is a facilitator connecting users with service providers (e.g., service centers, tow operators, spare part vendors). We are not directly responsible for the performance, quality, or delays caused by third-party providers.",
+					"Sayyn’s liability is limited to mediating disputes and ensuring compliance with service agreements.",
+					"Sayyn is not liable for:",
 					"o Any damage to vehicles during service or towing.",
 					"o Misuse or incorrect installation of spare parts.",
 					"o Delays caused by third-party providers."
@@ -285,20 +285,20 @@
 			"10": {
 				"title": "Intellectual Property",
 				"content": [
-					"All content on Fixawi’s app and website, including logos, designs, text, and graphics, is the exclusive property of Fixawi.",
-					"Users are prohibited from copying, modifying, or distributing Fixawi’s intellectual property without explicit written consent."
+					"All content on Sayyn’s app and website, including logos, designs, text, and graphics, is the exclusive property of Sayyn.",
+					"Users are prohibited from copying, modifying, or distributing Sayyn’s intellectual property without explicit written consent."
 				]
 			},
 			"11": {
 				"title": "Service Availability",
 				"content": [
-					"Fixawi strives to ensure uninterrupted access to its platform. However, we do not guarantee continuous availability due to potential technical issues, updates, or third-party service disruptions."
+					"Sayyn strives to ensure uninterrupted access to its platform. However, we do not guarantee continuous availability due to potential technical issues, updates, or third-party service disruptions."
 				]
 			},
 			"12": {
 				"title": "Termination of Use",
 				"content": [
-					"Fixawi reserves the right to suspend or terminate user accounts for violations of these Terms and Conditions.",
+					"Sayyn reserves the right to suspend or terminate user accounts for violations of these Terms and Conditions.",
 					"Refuse access to the platform for fraudulent or malicious activities.",
 					"Remove inappropriate or fraudulent content submitted by users."
 				]
@@ -306,21 +306,21 @@
 			"13": {
 				"title": "Dispute Resolution",
 				"content": [
-					"Any disputes arising from the use of Fixawi’s platform will be resolved amicably. Users can contact Fixawi support at support@fixawi.com for assistance.",
+					"Any disputes arising from the use of Sayyn’s platform will be resolved amicably. Users can contact Sayyn support at cs@sayyn.net for assistance.",
 					"If disputes cannot be resolved informally, they will be subject to the jurisdiction of the courts of [Egypt]."
 				]
 			},
 			"14": {
 				"title": "Updates to Terms and Conditions",
 				"content": [
-					"Fixawi reserves the right to update these Terms and Conditions to reflect changes in services, regulations, or business practices.",
+					"Sayyn reserves the right to update these Terms and Conditions to reflect changes in services, regulations, or business practices.",
 					"Users will be notified of significant changes via email notifications, app or website announcements.",
-					"By continuing to use Fixawi after updates, you agree to the revised terms."
+					"By continuing to use Sayyn after updates, you agree to the revised terms."
 				]
 			},
 			"15": {
 				"title": "Contact Information",
-				"content": "For questions or concerns regarding these Terms and Conditions, please contact us at support@fixawi.com."
+				"content": "For questions or concerns regarding these Terms and Conditions, please contact us at cs@sayyn.net."
 			}
 		}
 	}

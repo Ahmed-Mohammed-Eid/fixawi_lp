@@ -25,8 +25,12 @@
 	background-color: var(--website-color);
 }
 
-.Service:hover svg path {
-	fill: #ffffff;
+.Service:hover svg path:not(.not-changed) {
+	fill: #fec701;
+}
+
+.Service:nth-child(3):hover svg path:nth-child(2) {
+	fill: #ffffff !important;
 }
 
 .Service:hover .Service__heading {

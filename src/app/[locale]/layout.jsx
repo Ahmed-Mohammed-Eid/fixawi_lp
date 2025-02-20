@@ -6,13 +6,13 @@ import "./../globals.css";
 
 export async function generateMetadata({ params: { locale } }) {
 	return {
-		title: locale === "en" ? "Fixawi" : "فيكساوي",
+		title: locale === "en" ? "Sayyn" : "صاين",
 		description:
 			locale === "en"
-				? "Fixawi is a private company focused on simplifying car maintenance for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices."
-				: "فيكساوي هي شركة خاصة تركز على تبسيط صيانة السيارات لأصحابها. نحن نضمن أن تبقى السيارات في حالة ممتازة، ونقدم خدمات مريحة ومرنة من حيث الوقت والموقع بأسعار تنافسية.",
+				? "Sayyn is a private company focused on simplifying car maintenance for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices."
+				: "صاين هي شركة خاصة تركز على تبسيط صيانة السيارات لأصحابها. نحن نضمن أن تبقى السيارات في حالة ممتازة، ونقدم خدمات مريحة ومرنة من حيث الوقت والموقع بأسعار تنافسية.",
 		locale,
-		siteName: locale === "en" ? "Fixawi" : "فيكساوي",
+		siteName: locale === "en" ? "Sayyn" : "صاين",
 		icon: "/favicon.ico",
 	};
 }
@@ -24,67 +24,61 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
 	const arabicOG = (
 		<>
-			<meta property="og:url" content="https://fixawi.com/ar" />
+			<meta property="og:url" content="https://Sayyn.net/ar" />
 			<meta property="og:type" content="website" />
-			<meta property="og:title" content="فيكساوي" />
+			<meta property="og:title" content="صاين" />
 			<meta
 				property="og:description"
-				content="فيكساوي هي شركة خاصة تركز على تبسيط صيانة السيارات لأصحابها. نحن نضمن أن تبقى السيارات في حالة ممتازة، ونقدم خدمات مريحة ومرنة من حيث الوقت والموقع بأسعار تنافسية."
+				content="صاين هي شركة خاصة تركز على تبسيط صيانة السيارات لأصحابها. نحن نضمن أن تبقى السيارات في حالة ممتازة، ونقدم خدمات مريحة ومرنة من حيث الوقت والموقع بأسعار تنافسية."
 			/>
-			<meta
-				property="og:image"
-				content={"https://fixawi.com/og_ar.png"}
-			/>
+			<meta property="og:image" content={"https://sayyn.net/og_ar.png"} />
 
 			<meta name="twitter:card" content="summary_large_image" />
-			<meta property="twitter:domain" content="fixawi.com" />
-			<meta property="twitter:url" content="https://fixawi.com/ar" />
-			<meta name="twitter:title" content="فيكساوي" />
+			<meta property="twitter:domain" content="sayyn.net" />
+			<meta property="twitter:url" content="https://sayyn.net/ar" />
+			<meta name="twitter:title" content="صاين" />
 			<meta
 				name="twitter:description"
-				content="فيكساوي هي شركة خاصة تركز على تبسيط صيانة السيارات لأصحابها. نحن نضمن أن تبقى السيارات في حالة ممتازة، ونقدم خدمات مريحة ومرنة من حيث الوقت والموقع بأسعار تنافسية."
+				content="صاين هي شركة خاصة تركز على تبسيط صيانة السيارات لأصحابها. نحن نضمن أن تبقى السيارات في حالة ممتازة، ونقدم خدمات مريحة ومرنة من حيث الوقت والموقع بأسعار تنافسية."
 			/>
 			<meta
 				name="twitter:image"
-				content={"https://fixawi.com/og_ar.png"}
+				content={"https://sayyn.net/og_ar.png"}
 			/>
 
 			{/* SITENAME */}
-			<meta property="og:site_name" content="فيكساوي" />
+			<meta property="og:site_name" content="صاين" />
 		</>
 	);
 
 	const englishOG = (
 		<>
 			{/* <!-- Facebook Meta Tags --> */}
-			<meta property="og:url" content="https://fixawi.com/en" />
+			<meta property="og:url" content="https://sayyn.net/en" />
 			<meta property="og:type" content="website" />
-			<meta property="og:title" content="Fixawi" />
+			<meta property="og:title" content="Sayyn" />
 			<meta
 				property="og:description"
-				content="Fixawi is a private company focused on simplifying car maintenance for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices."
+				content="Sayyn is a private company focused on simplifying car maintenance for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices."
 			/>
-			<meta
-				property="og:image"
-				content={"https://fixawi.com/og_en.png"}
-			/>
+			<meta property="og:image" content={"https://sayyn.net/og_en.png"} />
 
 			{/* <!-- Twitter Meta Tags --> */}
 			<meta name="twitter:card" content="summary_large_image" />
-			<meta property="twitter:domain" content="fixawi.com" />
-			<meta property="twitter:url" content="https://fixawi.com/en" />
-			<meta name="twitter:title" content="Fixawi" />
+			<meta property="twitter:domain" content="sayyn.net" />
+			<meta property="twitter:url" content="https://sayyn.net/en" />
+			<meta name="twitter:title" content="Sayyn" />
 			<meta
 				name="twitter:description"
-				content="Fixawi is a private company focused on simplifying car maintenance for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices."
+				content="Sayyn is a private company focused on simplifying car maintenance for owners. We ensure vehicles are kept in excellent condition, offering convenient and flexible services in terms of time and location at competitive prices."
 			/>
 			<meta
 				name="twitter:image"
-				content={"https://fixawi.com/og_en.png"}
+				content={"https://sayyn.net/og_en.png"}
 			/>
 
 			{/* SITENAME */}
-			<meta property="og:site_name" content="Fixawi" />
+			<meta property="og:site_name" content="Sayyn" />
 		</>
 	);
 

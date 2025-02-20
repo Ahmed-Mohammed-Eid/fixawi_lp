@@ -119,7 +119,7 @@ export default function DropANote() {
 						</div>
 						<div className={classes.icons}>
 							<div className={classes.icon}>
-								<Link href={"mailto:Info@fixawi.com"}>
+								<Link href={"mailto:cs@sayyn.net"}>
 									<Image
 										src={"/gmail.svg"}
 										alt={"gmail"}
@@ -130,7 +130,7 @@ export default function DropANote() {
 							</div>
 							<div className={classes.icon}>
 								<Link
-									href={"https://www.facebook.com/Fixawi.eg/"}
+									href={"https://www.facebook.com/Sayyn.eg"}
 									target="_blank"
 								>
 									<Image
@@ -153,7 +153,7 @@ export default function DropANote() {
 							</div> */}
 							<div className={classes.icon}>
 								<Link
-									href={"https://www.youtube.com/@Fixawi"}
+									href={"https://www.youtube.com/@Sayyn-eg"}
 									target="_blank"
 								>
 									<Image
@@ -166,9 +166,7 @@ export default function DropANote() {
 							</div>
 							<div className={classes.icon}>
 								<Link
-									href={
-										"https://www.instagram.com/fixawi.eg/"
-									}
+									href={"https://www.instagram.com/sayyn.eg/"}
 									target="_blank"
 								>
 									<Image
