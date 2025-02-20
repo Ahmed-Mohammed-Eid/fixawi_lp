@@ -79,6 +79,9 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
 			{/* SITENAME */}
 			<meta property="og:site_name" content="Sayyn" />
+
+			{/* FAVICON */}
+			<link rel="icon" href="/favicon.ico" />
 		</>
 	);
 
