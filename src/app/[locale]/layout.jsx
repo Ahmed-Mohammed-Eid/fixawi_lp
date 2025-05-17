@@ -107,6 +107,18 @@ export default async function LocaleLayout({ children, params: { locale } }) {
                     gtag('config', 'G-FQGNBYE48Q');
                     `}
                 </Script>
+
+                <script
+                    defer="defer"
+                    type="text/javascript"
+                    src="https://sayyn.odoo.com/im_livechat/loader/1"
+                ></script>
+
+                <script
+                    defer="defer"
+                    type="text/javascript"
+                    src="https://sayyn.odoo.com/im_livechat/assets_embed.js"
+                ></script>
             </head>
             <body>
                 <NextIntlClientProvider messages={messages}>

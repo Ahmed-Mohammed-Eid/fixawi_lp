@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./TermsAndConditions.module.css";
-import logo from "../assets/Layer_1@2x.svg";
+import logo from "../assets/Layer_1@2x_black.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
