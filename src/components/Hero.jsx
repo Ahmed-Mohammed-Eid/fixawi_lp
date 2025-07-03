@@ -72,7 +72,7 @@ export default function Hero() {
                     </div>
                     {/* APPLE */}
                     <Link
-                        href="https://play.google.com/store/apps/details?id=com.nxtLeap.Fixawi"
+                        href="https://apps.apple.com/eg/app/sayyn/id6746460950"
                         className="btn"
                         target="_blank"
                     >
