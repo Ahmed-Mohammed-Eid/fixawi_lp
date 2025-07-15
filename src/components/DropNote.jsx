@@ -119,7 +119,7 @@ export default function DropANote() {
 						</div>
 						<div className={classes.icons}>
 							<div className={classes.icon}>
-								<Link href={"mailto:cs@sayyn.net"}>
+								<Link href={"mailto:support@sayyn.net"}>
 									<Image
 										src={"/gmail.svg"}
 										alt={"gmail"}

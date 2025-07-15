@@ -9,6 +9,7 @@ import About from "@/components/About";
 import HowToUse from "@/components/HowToUse";
 import DropANote from "@/components/DropNote";
 import Footer from "@/components/Footer";
+import PartnershipCareerSection from "@/components/PartnershipCareerSection";
 
 export default function HomePage({ params: { locale } }) {
 	const t = useTranslations();
@@ -64,6 +65,9 @@ export default function HomePage({ params: { locale } }) {
 
 				{/* PARTNERS */}
 				{/* <Partners /> */}
+				<PartnershipCareerSection locale={locale} />
+
+				{/* PARTNERS SECTION */}
 
 				{/* FOOTER */}
 				<Footer locale={locale} />
