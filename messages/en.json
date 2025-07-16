@@ -331,5 +331,51 @@
 		"title_2": "Grow in your career",
 		"description_2": "Join an amazing bunch of people who work behind the scenes to make talabat happen.",
 		"button_2": "See open job opportunities"
+	},
+	"PartnersPage": {
+		"title": "Sayyn – Your Marketing Platform to Increase Your Clients",
+		"description": "Are you a workshop owner? Have a towing service? Or an insurance company? Sayn is the app that will help you reach new customers in your area easily. Register your information now to be among the first service providers on our platform. ✅ Free registration ✅ Fast contact from our team within 24 hours",
+		"form": {
+			"fullName": "Full Name",
+			"company": "Company Name",
+			"serviceType": {
+				"title": "Type of Service You Provide",
+				"options": {
+					"option1": "Car Maintenance and Repair Workshop",
+					"option2": "Vehicle Rescue Service",
+					"option3": "Other (please specify)",
+					"typeOfOtherServices": "What other services do you provide?"
+				}
+			},
+			"place": "City and Area",
+			"phone": "Phone Number (for contact)",
+			"email": "Email Address (optional)",
+			"fbPage": "Facebook Page Link (optional)",
+			"taxId": {
+				"title": "Tax ID Number",
+				"option": "Do you have a tax record?"
+			},
+			"commercialRegister": {
+				"title": "Commercial Registration Number",
+				"option": "Do you have a commercial registration?"
+			},
+			"AddetionalQuestions": {
+				"title": "Additional Questions",
+				"placeholder": "Write your question or comment here..."
+			},
+			"submit": "Submit",
+			"errors": {
+				"fullName": "Please enter your full name",
+				"company": "Please enter your company name",
+				"serviceType": {
+					"options": "Please select the type of service you provide",
+					"other": "If you chose 'Other', please specify the services you provide"
+				},
+				"place": "Please enter the city and area",
+				"phone": "Please enter your phone number",
+				"email": "Please enter a valid email address",
+				"fbPage": "Please enter a valid Facebook page link"
+			}
+		}
 	}
 }

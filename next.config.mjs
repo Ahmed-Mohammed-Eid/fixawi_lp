@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
     env:{
         API_URL: "https://test.fixawi.com/api/v1"
-    }
+    },
 };
 
 export default withNextIntl(nextConfig);
