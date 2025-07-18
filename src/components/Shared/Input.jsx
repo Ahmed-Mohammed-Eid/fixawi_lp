@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./input.module.css";
+import classes from "./Input.module.css";
 import ErrorMessage from "./ErrorMessage";
 
 const Input = ({ label, placeholder, register, errors, required }) => {
