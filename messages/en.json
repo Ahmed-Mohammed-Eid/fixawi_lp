@@ -385,5 +385,12 @@
 		"downloadAndroid": "Download for Android",
 		"downloadIOS": "Download for iOS",
 		"qrTitle": "Or scan the code"
+	},
+	"FixedNavbar": {
+		"home": "Home",
+		"driverApp": "Driver APP",
+		"joinAsPartner": "Join As Partner",
+		"privacyPolicy": "Privacy Policy",
+		"termsAndConditions": "Terms and Conditions"
 	}
 }

@@ -11,15 +11,19 @@ import qrCodeIOS from "../../../assets/qrcode_apps.apple.com_winch.png";
 import playStore from "../../../assets/play-store.png";
 import appStore from "../../../assets/app-store.png";
 
+import FixedNavbar from "@/components/Shared/FixedNavbar";
 
 const metadataByLocale = {
     ar: {
         title: "تحميل تطبيق السائقين - خدمة الونش والإنقاذ",
-        description: "حمّل تطبيق السائقين الآن واحصل على طلبات الونش والإنقاذ مباشرة على هاتفك. متوفر على أندرويد و iOS مجاناً",
-        keywords: "تطبيق السائقين, ونش, إنقاذ, سيارات, تطبيق موبايل, أندرويد, iOS",
+        description:
+            "حمّل تطبيق السائقين الآن واحصل على طلبات الونش والإنقاذ مباشرة على هاتفك. متوفر على أندرويد و iOS مجاناً",
+        keywords:
+            "تطبيق السائقين, ونش, إنقاذ, سيارات, تطبيق موبايل, أندرويد, iOS",
         openGraph: {
             title: "تحميل تطبيق السائقين - خدمة الونش والإنقاذ",
-            description: "حمّل تطبيق السائقين الآن واحصل على طلبات الونش والإنقاذ مباشرة على هاتفك",
+            description:
+                "حمّل تطبيق السائقين الآن واحصل على طلبات الونش والإنقاذ مباشرة على هاتفك",
             type: "website",
             locale: "ar_SA",
         },
@@ -33,11 +37,13 @@ const metadataByLocale = {
     },
     en: {
         title: "Download the Drivers App - Winch & Rescue Service",
-        description: "Download the drivers app now and get winch and rescue requests directly on your phone. Available for Android and iOS for free.",
+        description:
+            "Download the drivers app now and get winch and rescue requests directly on your phone. Available for Android and iOS for free.",
         keywords: "drivers app, winch, rescue, cars, mobile app, Android, iOS",
         openGraph: {
             title: "Download the Drivers App - Winch & Rescue Service",
-            description: "Download the drivers app now and get winch and rescue requests directly on your phone.",
+            description:
+                "Download the drivers app now and get winch and rescue requests directly on your phone.",
             type: "website",
             locale: "en_US",
         },
@@ -52,13 +58,12 @@ const metadataByLocale = {
 };
 
 export function generateMetadata({ params: { locale } }) {
-    const lang = locale === 'ar' ? 'ar' : 'en';
+    const lang = locale === "ar" ? "ar" : "en";
     return metadataByLocale[lang];
 }
 
 const AppDownloadPage = ({ params: { locale } }) => {
     const t = useTranslations("AppDownloadPage");
-
     return (
         <>
             {/* JSON-LD Structured Data */}
@@ -69,8 +74,7 @@ const AppDownloadPage = ({ params: { locale } }) => {
                         "@context": "https://schema.org",
                         "@type": "MobileApplication",
                         name: "Sayyn Driver",
-                        description:
-                            "تطبيق صاين للسائقين لطلب الونش والإنقاذ",
+                        description: "تطبيق صاين للسائقين لطلب الونش والإنقاذ",
                         applicationCategory: "BusinessApplication",
                         operatingSystem: ["Android", "iOS"],
                         offers: {
@@ -81,26 +85,29 @@ const AppDownloadPage = ({ params: { locale } }) => {
                     }),
                 }}
             />
-
-            <div className={classes.container}>
-                {/* Logo */}
-                <Link href={`/${locale}`} className={classes.backLink}>
+            <FixedNavbar
+                logo={
                     <Image
                         src={logoImage}
-                        alt="العودة للرئيسية"
-                        width={150}
-                        height={75}
-                        className={classes.image}
-                        priority
+                        alt="Sayyn Logo"
+                        width={50}
+                        height={50}
                     />
-                </Link>
+                }
+                links={[
+                    { label: "home", href: `/${locale}` },
+                    { label: "joinAsPartner", href: `/${locale}/partners` },
+                    { label: "privacyPolicy", href: `/${locale}/privacy-policies` },
+                    { label: "termsAndConditions", href: `/${locale}/terms-and-conditions` },
+                ]}
+            />
+
+            <div className={classes.container}>
 
                 {/* Main Content */}
                 <div className={classes.content}>
                     <div className={classes.textSection}>
-                        <h1 className={classes.title}>
-                            {t("title")}
-                        </h1>
+                        <h1 className={classes.title}>{t("title")}</h1>
 
                         <p className={classes.description}>
                             {t("description")}

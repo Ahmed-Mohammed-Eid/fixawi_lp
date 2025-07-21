@@ -384,5 +384,12 @@
 		"downloadAndroid": "تحميل لأندرويد",
 		"downloadIOS": "تحميل لـ iOS",
 		"qrTitle": "أو امسح الكود"
+	},
+	"FixedNavbar": {
+		"home": "الرئيسية",
+		"driverApp": "تطبيق السائقين",
+		"joinAsPartner": "انضم كشريك",
+		"privacyPolicy": "سياسة الخصوصية",
+		"termsAndConditions": "الشروط والأحكام"
 	}
 }

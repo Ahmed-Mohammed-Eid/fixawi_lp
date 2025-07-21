@@ -13,6 +13,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import createSchema from "./schemas/partners-schema";
 import ErrorMessage from "@/components/Shared/ErrorMessage";
 import Textarea from "@/components/Shared/Textarea";
+import FixedNavbar from "@/components/Shared/FixedNavbar";
+
 
 const CareersPage = ({ params: { locale } }) => {
     const t = useTranslations("PartnersPage");
@@ -51,165 +53,206 @@ const CareersPage = ({ params: { locale } }) => {
     };
 
     return (
-        <div className={classes.container}>
-            <Link href={`/${locale}`} className={classes.backLink} passHref>
-                <Image
-                    src={careersImage}
-                    alt="Careers"
-                    width={150}
-                    height={300}
-                    className={classes.image}
-                    priority
-                />
-            </Link>
-            <h1 className={classes.title}>{t("title")}</h1>
-            <p className={classes.description}>{t("description")}</p>
-            <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-                <div className={classes.formGrid}>
-                    {/* Full Name */}
-                    <Input
-                        label={t("form.fullName")}
-                        placeholder={t("form.fullName")}
-                        register={register("fullName", { required: true })}
-                        errors={errors.fullName}
-                        required={true}
+        <>
+            <FixedNavbar
+                logo={
+                    <Image
+                        src={careersImage}
+                        alt="Sayyn Logo"
+                        width={50}
+                        height={50}
                     />
-
-                    {/* Company */}
-                    <Input
-                        label={t("form.company")}
-                        placeholder={t("form.company")}
-                        register={register("company", { required: true })}
-                        errors={errors.company}
-                        required={true}
+                }
+                links={[
+                    { label: "home", href: `/${locale}` },
+                    { label: "driverApp", href: `/${locale}/careers` },
+                    {
+                        label: "privacyPolicy",
+                        href: `/${locale}/privacy-policies`,
+                    },
+                    {
+                        label: "termsAndConditions",
+                        href: `/${locale}/terms-and-conditions`,
+                    },
+                ]}
+            />
+            <div className={classes.container}>
+                {/* <Link href={`/${locale}`} className={classes.backLink} passHref>
+                    <Image
+                        src={careersImage}
+                        alt="Careers"
+                        width={150}
+                        height={300}
+                        className={classes.image}
+                        priority
                     />
+                </Link> */}
+                <h1 className={classes.title}>{t("title")}</h1>
+                <p className={classes.description}>{t("description")}</p>
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className={classes.form}
+                >
+                    <div className={classes.formGrid}>
+                        {/* Full Name */}
+                        <Input
+                            label={t("form.fullName")}
+                            placeholder={t("form.fullName")}
+                            register={register("fullName", { required: true })}
+                            errors={errors.fullName}
+                            required={true}
+                        />
 
-                    {/* Service Type - Full Width */}
-                    <div className={`${classes.mixedGroup} ${classes.fullWidth}`}>
-                        <p>{t("form.serviceType.title")}</p>
-                        <ErrorMessage message={errors.serviceType?.message} />
-                        <div className={classes.CheckboxContainer}>
-                            <Checkbox
-                                label={t("form.serviceType.options.option1")}
-                                errors={errors.serviceType?.option1}
-                                value={"ورشة صيانة وتصليح سيارات"}
-                                name={"serviceType"}
-                                setValue={setValue}
-                                selectedValue={serviceType}
+                        {/* Company */}
+                        <Input
+                            label={t("form.company")}
+                            placeholder={t("form.company")}
+                            register={register("company", { required: true })}
+                            errors={errors.company}
+                            required={true}
+                        />
+
+                        {/* Service Type - Full Width */}
+                        <div
+                            className={`${classes.mixedGroup} ${classes.fullWidth}`}
+                        >
+                            <p>{t("form.serviceType.title")}</p>
+                            <ErrorMessage
+                                message={errors.serviceType?.message}
                             />
-                            <Checkbox
-                                label={t("form.serviceType.options.option2")}
-                                errors={errors.serviceType?.option2}
-                                value={"خدمة إنقاذ مركبات"}
-                                name={"serviceType"}
-                                setValue={setValue}
-                                selectedValue={serviceType}
-                            />
-                            <Checkbox
-                                label={t("form.serviceType.options.option3")}
-                                errors={errors.serviceType?.option3}
-                                value={"أخرى"}
-                                name={"serviceType"}
-                                setValue={setValue}
-                                selectedValue={serviceType}
-                            />
+                            <div className={classes.CheckboxContainer}>
+                                <Checkbox
+                                    label={t(
+                                        "form.serviceType.options.option1"
+                                    )}
+                                    errors={errors.serviceType?.option1}
+                                    value={"ورشة صيانة وتصليح سيارات"}
+                                    name={"serviceType"}
+                                    setValue={setValue}
+                                    selectedValue={serviceType}
+                                />
+                                <Checkbox
+                                    label={t(
+                                        "form.serviceType.options.option2"
+                                    )}
+                                    errors={errors.serviceType?.option2}
+                                    value={"خدمة إنقاذ مركبات"}
+                                    name={"serviceType"}
+                                    setValue={setValue}
+                                    selectedValue={serviceType}
+                                />
+                                <Checkbox
+                                    label={t(
+                                        "form.serviceType.options.option3"
+                                    )}
+                                    errors={errors.serviceType?.option3}
+                                    value={"أخرى"}
+                                    name={"serviceType"}
+                                    setValue={setValue}
+                                    selectedValue={serviceType}
+                                />
+                            </div>
+                            {serviceType?.includes("أخرى") && (
+                                <Input
+                                    label={t(
+                                        "form.serviceType.options.typeOfOtherServices"
+                                    )}
+                                    placeholder={t(
+                                        "form.serviceType.options.typeOfOtherServices"
+                                    )}
+                                    register={register("typeOfOtherServices")}
+                                    errors={errors.typeOfOtherServices}
+                                    required={false}
+                                />
+                            )}
                         </div>
-                        {serviceType?.includes("أخرى") && (
-                            <Input
-                                label={t(
-                                    "form.serviceType.options.typeOfOtherServices"
-                                )}
-                                placeholder={t(
-                                    "form.serviceType.options.typeOfOtherServices"
-                                )}
-                                register={register("typeOfOtherServices")}
-                                errors={errors.typeOfOtherServices}
-                                required={false}
-                            />
-                        )}
-                    </div>
 
-                    {/* Place */}
-                    <Input
-                        label={t("form.place")}
-                        placeholder={t("form.place")}
-                        register={register("place", { required: true })}
-                        errors={errors.place}
-                        required={true}
-                    />
-
-                    {/* Phone Number */}
-                    <Input
-                        label={t("form.phone")}
-                        placeholder={t("form.phone")}
-                        register={register("phone", { required: true })}
-                        errors={errors.phone}
-                        required={true}
-                    />
-
-                    {/* Email */}
-                    <Input
-                        label={t("form.email")}
-                        placeholder={t("form.email")}
-                        register={register("email", { required: true })}
-                        errors={errors.email}
-                        required={false}
-                    />
-
-                    {/* Facebook Page */}
-                    <Input
-                        label={t("form.fbPage")}
-                        placeholder={t("form.fbPage")}
-                        register={register("fbPage", { required: true })}
-                        errors={errors.fbPage}
-                        required={false}
-                    />
-
-                    {/* Tax ID */}
-                    <div className={classes.mixedGroup}>
-                        <p className={classes.title}>{t("form.taxId.title")}</p>
-                        <Checkbox
-                            label={t("form.taxId.option")}
-                            errors={errors.taxId}
-                            value={true}
-                            name={"taxId"}
-                            setValue={setValue}
-                            selectedValue={taxId}
+                        {/* Place */}
+                        <Input
+                            label={t("form.place")}
+                            placeholder={t("form.place")}
+                            register={register("place", { required: true })}
+                            errors={errors.place}
+                            required={true}
                         />
-                    </div>
 
-                    {/* Commercial Registration */}
-                    <div className={classes.mixedGroup}>
-                        <p className={classes.title}>
-                            {t("form.commercialRegister.title")}
-                        </p>
-                        <Checkbox
-                            label={t("form.commercialRegister.option")}
-                            errors={errors.commercialRegister}
-                            value={true}
-                            name={"commercialRegister"}
-                            setValue={setValue}
-                            selectedValue={commercialRegister}
+                        {/* Phone Number */}
+                        <Input
+                            label={t("form.phone")}
+                            placeholder={t("form.phone")}
+                            register={register("phone", { required: true })}
+                            errors={errors.phone}
+                            required={true}
                         />
-                    </div>
 
-                    {/* Additional Information - Full Width */}
-                    <div className={classes.fullWidth}>
-                        <Textarea
-                            label={t("form.AddetionalQuestions.title")}
-                            placeholder={t("form.AddetionalQuestions.placeholder")}
-                            register={register("additionalInfo")}
-                            errors={errors.additionalInfo}
+                        {/* Email */}
+                        <Input
+                            label={t("form.email")}
+                            placeholder={t("form.email")}
+                            register={register("email", { required: true })}
+                            errors={errors.email}
                             required={false}
                         />
-                    </div>
-                </div>
 
-                <button type="submit" className={classes.button}>
-                    {t("form.submit") || "Submit"}
-                </button>
-            </form>
-        </div>
+                        {/* Facebook Page */}
+                        <Input
+                            label={t("form.fbPage")}
+                            placeholder={t("form.fbPage")}
+                            register={register("fbPage", { required: true })}
+                            errors={errors.fbPage}
+                            required={false}
+                        />
+
+                        {/* Tax ID */}
+                        <div className={classes.mixedGroup}>
+                            <p className={classes.title}>
+                                {t("form.taxId.title")}
+                            </p>
+                            <Checkbox
+                                label={t("form.taxId.option")}
+                                errors={errors.taxId}
+                                value={true}
+                                name={"taxId"}
+                                setValue={setValue}
+                                selectedValue={taxId}
+                            />
+                        </div>
+
+                        {/* Commercial Registration */}
+                        <div className={classes.mixedGroup}>
+                            <p className={classes.title}>
+                                {t("form.commercialRegister.title")}
+                            </p>
+                            <Checkbox
+                                label={t("form.commercialRegister.option")}
+                                errors={errors.commercialRegister}
+                                value={true}
+                                name={"commercialRegister"}
+                                setValue={setValue}
+                                selectedValue={commercialRegister}
+                            />
+                        </div>
+
+                        {/* Additional Information - Full Width */}
+                        <div className={classes.fullWidth}>
+                            <Textarea
+                                label={t("form.AddetionalQuestions.title")}
+                                placeholder={t(
+                                    "form.AddetionalQuestions.placeholder"
+                                )}
+                                register={register("additionalInfo")}
+                                errors={errors.additionalInfo}
+                                required={false}
+                            />
+                        </div>
+                    </div>
+
+                    <button type="submit" className={classes.button}>
+                        {t("form.submit") || "Submit"}
+                    </button>
+                </form>
+            </div>
+        </>
     );
 };
 

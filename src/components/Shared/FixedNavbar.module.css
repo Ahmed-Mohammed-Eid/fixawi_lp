@@ -1,0 +1,231 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+	z-index: 1000;
+}
+
+.navbarContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0.5rem 1.5rem;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	height: 48px;
+}
+
+.menuToggle {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	margin-left: 1rem;
+}
+
+.menuIcon {
+	width: 24px;
+	height: 2px;
+	background: #333;
+	display: block;
+	position: relative;
+}
+.menuIcon::before,
+.menuIcon::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 24px;
+	height: 2px;
+	background: #333;
+	transition: 0.3s;
+}
+.menuIcon::before {
+	top: -8px;
+}
+.menuIcon::after {
+	top: 8px;
+}
+
+.navLinks {
+	display: flex;
+	gap: 1.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	transition: max-height 0.3s;
+}
+
+.navItem {}
+
+.navLink {
+	color: #222;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: color 0.2s;
+}
+.navLink:hover {
+	color: #0070f3;
+}
+
+@media (max-width: 900px) {
+	.navbarContent {
+		padding: 0.5rem 1rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.menuToggle {
+		display: block;
+	}
+	.navLinks {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100vw;
+		background: #fff;
+		flex-direction: column;
+		gap: 0;
+		max-height: 0;
+		overflow: hidden;
+		box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+	}
+	.navLinks.open {
+		max-height: 400px;
+		border-bottom: 1px solid #eee;
+	}
+	.navItem {
+		border-bottom: 1px solid #f0f0f0;
+		text-align: left;
+	}
+	.navLink {
+		display: block;
+		padding: 1rem 1.5rem;
+	}
+}
+
+/* RTL STYLE */
+
+html[lang="ar"] .navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+	z-index: 1000;
+}
+
+html[lang="ar"] .navbarContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0.5rem 1.5rem;
+}
+
+html[lang="ar"] .logo {
+	display: flex;
+	align-items: center;
+	height: 48px;
+}
+
+html[lang="ar"] .menuToggle {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	margin-right: 1rem;
+}
+
+html[lang="ar"] .menuIcon {
+	width: 24px;
+	height: 2px;
+	background: #333;
+	display: block;
+	position: relative;
+}
+html[lang="ar"] .menuIcon::before,
+html[lang="ar"] .menuIcon::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	width: 24px;
+	height: 2px;
+	background: #333;
+	transition: 0.3s;
+}
+html[lang="ar"] .menuIcon::before {
+	top: -8px;
+}
+html[lang="ar"] .menuIcon::after {
+	top: 8px;
+}
+
+html[lang="ar"] .navLinks {
+	display: flex;
+	gap: 1.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	transition: max-height 0.3s;
+}
+
+html[lang="ar"] .navLink {
+	color: #222;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: color 0.2s;
+}
+html[lang="ar"] .navLink:hover {
+	color: #0070f3;
+}
+
+@media (max-width: 900px) {
+	html[lang="ar"] .navbarContent {
+		padding: 0.5rem 1rem;
+	}
+}
+
+@media (max-width: 700px) {
+	html[lang="ar"] .menuToggle {
+		display: block;
+	}
+	html[lang="ar"] .navLinks {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		width: 100vw;
+		background: #fff;
+		flex-direction: column;
+		gap: 0;
+		max-height: 0;
+		overflow: hidden;
+		box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+	}
+	html[lang="ar"] .navLinks.open {
+		max-height: 400px;
+		border-bottom: 1px solid #eee;
+	}
+	html[lang="ar"] .navItem {
+		border-bottom: 1px solid #f0f0f0;
+		text-align: right;
+	}
+	html[lang="ar"] .navLink {
+		display: block;
+		padding: 1rem 1.5rem;
+	}
+}
