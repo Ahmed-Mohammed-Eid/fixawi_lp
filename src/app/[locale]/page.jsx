@@ -19,27 +19,27 @@ export default function HomePage({ params: { locale } }) {
 			<Navbar
 				links={[
 					{
-						label: t("Home"),
+						label: "Home",  // KEY AT messages/en.json
 						href: "#Hero",
 						id: "Hero__Link",
 					},
 					{
-						label: t("Services"),
+						label: "Services", // KEY AT messages/en.json
 						href: "#Services",
 						id: "Services__Link",
 					},
 					{
-						label: t("About"),
+						label: "About", // KEY AT messages/en.json
 						href: "#About",
 						id: "About__Link",
 					},
 					{
-						label: t("HowToUse"),
+						label: "HowToUse", // KEY AT messages/en.json
 						href: "#HowToUse",
 						id: "HowToUse__Link",
 					},
 					{
-						label: t("Contact"),
+						label: "Contact", // KEY AT messages/en.json
 						href: "#DropANote",
 						id: "DropANote__Link",
 					},

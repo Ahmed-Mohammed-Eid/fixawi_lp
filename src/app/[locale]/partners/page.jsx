@@ -59,12 +59,14 @@ const CareersPage = ({ params: { locale } }) => {
                     width={150}
                     height={300}
                     className={classes.image}
+                    priority
                 />
             </Link>
             <h1 className={classes.title}>{t("title")}</h1>
             <p className={classes.description}>{t("description")}</p>
             <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-                <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+                <div className={classes.formGrid}>
+                    {/* Full Name */}
                     <Input
                         label={t("form.fullName")}
                         placeholder={t("form.fullName")}
@@ -73,6 +75,7 @@ const CareersPage = ({ params: { locale } }) => {
                         required={true}
                     />
 
+                    {/* Company */}
                     <Input
                         label={t("form.company")}
                         placeholder={t("form.company")}
@@ -81,7 +84,8 @@ const CareersPage = ({ params: { locale } }) => {
                         required={true}
                     />
 
-                    <div className={`${classes.mixedGroup} col-span-2`}>
+                    {/* Service Type - Full Width */}
+                    <div className={`${classes.mixedGroup} ${classes.fullWidth}`}>
                         <p>{t("form.serviceType.title")}</p>
                         <ErrorMessage message={errors.serviceType?.message} />
                         <div className={classes.CheckboxContainer}>
@@ -125,7 +129,7 @@ const CareersPage = ({ params: { locale } }) => {
                         )}
                     </div>
 
-                    {/* CITY & AREA */}
+                    {/* Place */}
                     <Input
                         label={t("form.place")}
                         placeholder={t("form.place")}
@@ -134,7 +138,7 @@ const CareersPage = ({ params: { locale } }) => {
                         required={true}
                     />
 
-                    {/* PHONE NUMBER */}
+                    {/* Phone Number */}
                     <Input
                         label={t("form.phone")}
                         placeholder={t("form.phone")}
@@ -143,7 +147,7 @@ const CareersPage = ({ params: { locale } }) => {
                         required={true}
                     />
 
-                    {/* EMAIL */}
+                    {/* Email */}
                     <Input
                         label={t("form.email")}
                         placeholder={t("form.email")}
@@ -152,7 +156,7 @@ const CareersPage = ({ params: { locale } }) => {
                         required={false}
                     />
 
-                    {/* FB PAGE */}
+                    {/* Facebook Page */}
                     <Input
                         label={t("form.fbPage")}
                         placeholder={t("form.fbPage")}
@@ -161,8 +165,8 @@ const CareersPage = ({ params: { locale } }) => {
                         required={false}
                     />
 
-                    {/* TAX ID */}
-                    <div>
+                    {/* Tax ID */}
+                    <div className={classes.mixedGroup}>
                         <p className={classes.title}>{t("form.taxId.title")}</p>
                         <Checkbox
                             label={t("form.taxId.option")}
@@ -174,8 +178,8 @@ const CareersPage = ({ params: { locale } }) => {
                         />
                     </div>
 
-                    {/* COMMERCIAL REGISTRATION */}
-                    <div>
+                    {/* Commercial Registration */}
+                    <div className={classes.mixedGroup}>
                         <p className={classes.title}>
                             {t("form.commercialRegister.title")}
                         </p>
@@ -189,7 +193,8 @@ const CareersPage = ({ params: { locale } }) => {
                         />
                     </div>
 
-                    <div className="col-span-2">
+                    {/* Additional Information - Full Width */}
+                    <div className={classes.fullWidth}>
                         <Textarea
                             label={t("form.AddetionalQuestions.title")}
                             placeholder={t("form.AddetionalQuestions.placeholder")}
@@ -201,7 +206,7 @@ const CareersPage = ({ params: { locale } }) => {
                 </div>
 
                 <button type="submit" className={classes.button}>
-                    Submit
+                    {t("form.submit") || "Submit"}
                 </button>
             </form>
         </div>

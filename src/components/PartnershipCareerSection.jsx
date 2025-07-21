@@ -43,10 +43,10 @@ const PartnershipCareerSection = ({ locale }) => {
                 <div className={styles.contentTop}>
                     <div className={styles.iconContainer}>
                         <Image
-                            src="/star.png"
-                            alt="Star Icon"
-                            width={100}
-                            height={100}
+                            src="/winch.png"
+                            alt="Winch Icon"
+                            width={50}
+                            height={50}
                             objectFit="contain"
                         />
                     </div>
