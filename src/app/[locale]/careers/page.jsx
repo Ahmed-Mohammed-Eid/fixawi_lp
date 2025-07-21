@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import classes from "./careersPage.module.css";
 // IMAGE IMPORTS
 import logoImage from "../../../assets/Layer_1@2x_black.svg";
-import appMockup from "../../../assets/Mobile.png";
+import appMockup from "../../../assets/Mobile_driver.png";
 import qrCodeAndroid from "../../../assets/qrcode_play.google.com_winch.png";
 import qrCodeIOS from "../../../assets/qrcode_apps.apple.com_winch.png";
 import playStore from "../../../assets/play-store.png";
