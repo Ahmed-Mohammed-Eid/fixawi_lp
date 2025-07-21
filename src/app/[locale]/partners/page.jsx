@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import classes from "./careersPage.module.css";
+import classes from "./partnersPage.module.css";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 // IMAGE IMPORT

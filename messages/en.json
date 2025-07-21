@@ -377,5 +377,13 @@
 				"fbPage": "Please enter a valid Facebook page link"
 			}
 		}
+	},
+	"AppDownloadPage": {
+		"title": "Download Driver App",
+		"description": "Get towing and rescue requests directly on your phone and increase your earnings with the easiest driver app in the Kingdom",
+		"downloadTitle": "Download App Now",
+		"downloadAndroid": "Download for Android",
+		"downloadIOS": "Download for iOS",
+		"qrTitle": "Or scan the code"
 	}
 }

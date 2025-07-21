@@ -1,211 +1,175 @@
-"use client";
-import React, { useEffect } from "react";
-import { useForm } from "react-hook-form";
-import classes from "./careersPage.module.css";
+import React from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-// IMAGE IMPORT
-import careersImage from "../../../assets/Layer_1@2x_black.svg";
 import Link from "next/link";
-import Input from "@/components/Shared/Input";
-import Checkbox from "@/components/Shared/Checkbox";
-import { zodResolver } from "@hookform/resolvers/zod";
-import createSchema from "./schemas/partners-schema";
-import ErrorMessage from "@/components/Shared/ErrorMessage";
-import Textarea from "@/components/Shared/Textarea";
+import { useTranslations } from "next-intl";
+import classes from "./careersPage.module.css";
+// IMAGE IMPORTS
+import logoImage from "../../../assets/Layer_1@2x_black.svg";
+import appMockup from "../../../assets/Mobile.png";
+import qrCodeAndroid from "../../../assets/qrcode_play.google.com_winch.png";
+import qrCodeIOS from "../../../assets/qrcode_apps.apple.com_winch.png";
+import playStore from "../../../assets/play-store.png";
+import appStore from "../../../assets/app-store.png";
 
-const CareersPage = ({ params: { locale } }) => {
-    const t = useTranslations("PartnersPage");
-    const schema = createSchema(t);
 
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors },
-        setValue,
-    } = useForm({
-        resolver: zodResolver(schema),
-        mode: "onBlur",
-        defaultValues: {
-            fullName: "",
-            company: "",
-            serviceType: [],
-            typeOfOtherServices: "",
+const metadataByLocale = {
+    ar: {
+        title: "تحميل تطبيق السائقين - خدمة الونش والإنقاذ",
+        description: "حمّل تطبيق السائقين الآن واحصل على طلبات الونش والإنقاذ مباشرة على هاتفك. متوفر على أندرويد و iOS مجاناً",
+        keywords: "تطبيق السائقين, ونش, إنقاذ, سيارات, تطبيق موبايل, أندرويد, iOS",
+        openGraph: {
+            title: "تحميل تطبيق السائقين - خدمة الونش والإنقاذ",
+            description: "حمّل تطبيق السائقين الآن واحصل على طلبات الونش والإنقاذ مباشرة على هاتفك",
+            type: "website",
+            locale: "ar_SA",
         },
-    });
+        alternates: {
+            canonical: "https://sayyn.net/ar/careers",
+            languages: {
+                "ar-SA": "https://sayyn.net/ar/careers",
+                "en-US": "https://sayyn.net/en/careers",
+            },
+        },
+    },
+    en: {
+        title: "Download the Drivers App - Winch & Rescue Service",
+        description: "Download the drivers app now and get winch and rescue requests directly on your phone. Available for Android and iOS for free.",
+        keywords: "drivers app, winch, rescue, cars, mobile app, Android, iOS",
+        openGraph: {
+            title: "Download the Drivers App - Winch & Rescue Service",
+            description: "Download the drivers app now and get winch and rescue requests directly on your phone.",
+            type: "website",
+            locale: "en_US",
+        },
+        alternates: {
+            canonical: "https://sayyn.net/en/careers",
+            languages: {
+                "ar-SA": "https://sayyn.net/ar/careers",
+                "en-US": "https://sayyn.net/en/careers",
+            },
+        },
+    },
+};
 
-    const serviceType = watch("serviceType");
-    const commercialRegister = watch("commercialRegister");
-    const taxId = watch("taxId");
+export function generateMetadata({ params: { locale } }) {
+    const lang = locale === 'ar' ? 'ar' : 'en';
+    return metadataByLocale[lang];
+}
 
-    useEffect(() => {
-        console.log("Service Type Changed:", serviceType);
-    }, [serviceType]);
-    console.log("Errors:", errors);
-
-    // SUBMIT HANDLER
-    const onSubmit = (data) => {
-        console.log(errors);
-        console.log(data);
-    };
+const AppDownloadPage = ({ params: { locale } }) => {
+    const t = useTranslations("AppDownloadPage");
 
     return (
-        <div className={classes.container}>
-            <Link href={`/${locale}`} className={classes.backLink} passHref>
-                <Image
-                    src={careersImage}
-                    alt="Careers"
-                    width={150}
-                    height={300}
-                    className={classes.image}
-                />
-            </Link>
-            <h1 className={classes.title}>{t("title")}</h1>
-            <p className={classes.description}>{t("description")}</p>
-            <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-                <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-                    <Input
-                        label={t("form.fullName")}
-                        placeholder={t("form.fullName")}
-                        register={register("fullName", { required: true })}
-                        errors={errors.fullName}
-                        required={true}
+        <>
+            {/* JSON-LD Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "MobileApplication",
+                        name: "Sayyn Driver",
+                        description:
+                            "تطبيق صاين للسائقين لطلب الونش والإنقاذ",
+                        applicationCategory: "BusinessApplication",
+                        operatingSystem: ["Android", "iOS"],
+                        offers: {
+                            "@type": "Offer",
+                            price: "0",
+                            priceCurrency: "EGP",
+                        },
+                    }),
+                }}
+            />
+
+            <div className={classes.container}>
+                {/* Logo */}
+                <Link href={`/${locale}`} className={classes.backLink}>
+                    <Image
+                        src={logoImage}
+                        alt="العودة للرئيسية"
+                        width={150}
+                        height={75}
+                        className={classes.image}
+                        priority
                     />
+                </Link>
 
-                    <Input
-                        label={t("form.company")}
-                        placeholder={t("form.company")}
-                        register={register("company", { required: true })}
-                        errors={errors.company}
-                        required={true}
-                    />
+                {/* Main Content */}
+                <div className={classes.content}>
+                    <div className={classes.textSection}>
+                        <h1 className={classes.title}>
+                            {t("title")}
+                        </h1>
 
-                    <div className={`${classes.mixedGroup} col-span-2`}>
-                        <p>{t("form.serviceType.title")}</p>
-                        <ErrorMessage message={errors.serviceType?.message} />
-                        <div className={classes.CheckboxContainer}>
-                            <Checkbox
-                                label={t("form.serviceType.options.option1")}
-                                errors={errors.serviceType?.option1}
-                                value={"ورشة صيانة وتصليح سيارات"}
-                                name={"serviceType"}
-                                setValue={setValue}
-                                selectedValue={serviceType}
-                            />
-                            <Checkbox
-                                label={t("form.serviceType.options.option2")}
-                                errors={errors.serviceType?.option2}
-                                value={"خدمة إنقاذ مركبات"}
-                                name={"serviceType"}
-                                setValue={setValue}
-                                selectedValue={serviceType}
-                            />
-                            <Checkbox
-                                label={t("form.serviceType.options.option3")}
-                                errors={errors.serviceType?.option3}
-                                value={"أخرى"}
-                                name={"serviceType"}
-                                setValue={setValue}
-                                selectedValue={serviceType}
-                            />
-                        </div>
-                        {serviceType?.includes("أخرى") && (
-                            <Input
-                                label={t(
-                                    "form.serviceType.options.typeOfOtherServices"
-                                )}
-                                placeholder={t(
-                                    "form.serviceType.options.typeOfOtherServices"
-                                )}
-                                register={register("typeOfOtherServices")}
-                                errors={errors.typeOfOtherServices}
-                                required={false}
-                            />
-                        )}
-                    </div>
-
-                    {/* CITY & AREA */}
-                    <Input
-                        label={t("form.place")}
-                        placeholder={t("form.place")}
-                        register={register("place", { required: true })}
-                        errors={errors.place}
-                        required={true}
-                    />
-
-                    {/* PHONE NUMBER */}
-                    <Input
-                        label={t("form.phone")}
-                        placeholder={t("form.phone")}
-                        register={register("phone", { required: true })}
-                        errors={errors.phone}
-                        required={true}
-                    />
-
-                    {/* EMAIL */}
-                    <Input
-                        label={t("form.email")}
-                        placeholder={t("form.email")}
-                        register={register("email", { required: true })}
-                        errors={errors.email}
-                        required={false}
-                    />
-
-                    {/* FB PAGE */}
-                    <Input
-                        label={t("form.fbPage")}
-                        placeholder={t("form.fbPage")}
-                        register={register("fbPage", { required: true })}
-                        errors={errors.fbPage}
-                        required={false}
-                    />
-
-                    {/* TAX ID */}
-                    <div>
-                        <p className={classes.title}>{t("form.taxId.title")}</p>
-                        <Checkbox
-                            label={t("form.taxId.option")}
-                            errors={errors.taxId}
-                            value={true}
-                            name={"taxId"}
-                            setValue={setValue}
-                            selectedValue={taxId}
-                        />
-                    </div>
-
-                    {/* COMMERCIAL REGISTRATION */}
-                    <div>
-                        <p className={classes.title}>
-                            {t("form.commercialRegister.title")}
+                        <p className={classes.description}>
+                            {t("description")}
                         </p>
-                        <Checkbox
-                            label={t("form.commercialRegister.option")}
-                            errors={errors.commercialRegister}
-                            value={true}
-                            name={"commercialRegister"}
-                            setValue={setValue}
-                            selectedValue={commercialRegister}
-                        />
+
+                        <div className={classes.downloadSection}>
+                            <div className={classes.downloadLinks}>
+                                <div className={classes.storeLink}>
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.nxtLeap.FixawiDriver"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Image
+                                            src={playStore}
+                                            alt="Get it on Google Play"
+                                            width={180}
+                                            height={60}
+                                        />
+                                    </a>
+                                    <Image
+                                        src={qrCodeAndroid}
+                                        alt="QR Code Android"
+                                        width={180}
+                                        height={180}
+                                        className={classes.qrImage}
+                                    />
+                                </div>
+
+                                <div className={classes.storeLink}>
+                                    <a
+                                        href="https://apps.apple.com/eg/app/sayyn-driver/id6746718888"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Image
+                                            src={appStore}
+                                            alt="Download on the App Store"
+                                            width={180}
+                                            height={60}
+                                        />
+                                    </a>
+                                    <Image
+                                        src={qrCodeIOS}
+                                        alt="QR Code iOS"
+                                        width={180}
+                                        height={180}
+                                        className={classes.qrImage}
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="col-span-2">
-                        <Textarea
-                            label={t("form.AddetionalQuestions.title")}
-                            placeholder={t("form.AddetionalQuestions.placeholder")}
-                            register={register("additionalInfo")}
-                            errors={errors.additionalInfo}
-                            required={false}
+                    {/* App Preview */}
+                    <div className={classes.imageSection}>
+                        <Image
+                            src={appMockup}
+                            alt="لقطة من التطبيق"
+                            width={300}
+                            height={600}
+                            className={classes.appImage}
+                            priority
                         />
                     </div>
                 </div>
-
-                <button type="submit" className={classes.button}>
-                    Submit
-                </button>
-            </form>
-        </div>
+            </div>
+        </>
     );
 };
 
-export default CareersPage;
+export default AppDownloadPage;
