@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import classes from "./partnersPage.module.css";
 import Image from "next/image";
@@ -9,16 +9,18 @@ import careersImage from "../../../assets/Layer_1@2x_black.svg";
 import Link from "next/link";
 import Input from "@/components/Shared/Input";
 import Checkbox from "@/components/Shared/Checkbox";
+import CheckboxNormal from "@/components/Shared/Checkbox_Normal";
 import { zodResolver } from "@hookform/resolvers/zod";
 import createSchema from "./schemas/partners-schema";
 import ErrorMessage from "@/components/Shared/ErrorMessage";
 import Textarea from "@/components/Shared/Textarea";
 import FixedNavbar from "@/components/Shared/FixedNavbar";
-
+import toast from "react-hot-toast";
 
 const CareersPage = ({ params: { locale } }) => {
     const t = useTranslations("PartnersPage");
     const schema = createSchema(t);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const {
         register,
@@ -34,6 +36,13 @@ const CareersPage = ({ params: { locale } }) => {
             company: "",
             serviceType: [],
             typeOfOtherServices: "",
+            place: "",
+            phone: "",
+            email: "",
+            fbPage: "",
+            taxId: false,
+            commercialRegister: false,
+            message: "",
         },
     });
 
@@ -41,15 +50,54 @@ const CareersPage = ({ params: { locale } }) => {
     const commercialRegister = watch("commercialRegister");
     const taxId = watch("taxId");
 
+
+
+    
+
     useEffect(() => {
-        console.log("Service Type Changed:", serviceType);
+
     }, [serviceType]);
-    console.log("Errors:", errors);
 
     // SUBMIT HANDLER
     const onSubmit = (data) => {
-        console.log(errors);
-        console.log(data);
+        setIsSubmitting(true);
+        const formattedData = {
+            fullName: data.fullName,
+            serviceCenterTitle: data.company,
+            services: data?.serviceType.join(", ") + ", " + (data?.typeOfOtherServices || ""),
+            City: data.place,
+            phoneNumber: data.phone,
+            email: data.email || "",
+            facebook: data.fbPage || "",
+            haveTaxId: taxId,
+            haveCommercialId: commercialRegister,
+            quests: data.message || "",
+        }
+
+        fetch(`${process.env.API_URL}/be/partner`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formattedData),
+        })
+            .then((response) => {
+                setIsSubmitting(false);
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+
+                toast.success(
+                    t("form.successMessage")
+                );
+            })
+            .catch((error) => {
+                setIsSubmitting(false);
+                toast.error(error.response?.data?.message || error.message);
+            });
     };
 
     return (
@@ -116,7 +164,7 @@ const CareersPage = ({ params: { locale } }) => {
                         <div
                             className={`${classes.mixedGroup} ${classes.fullWidth}`}
                         >
-                            <p>{t("form.serviceType.title")}</p>
+                            <p className={classes.label}>{t("form.serviceType.title")}</p>
                             <ErrorMessage
                                 message={errors.serviceType?.message}
                             />
@@ -125,7 +173,6 @@ const CareersPage = ({ params: { locale } }) => {
                                     label={t(
                                         "form.serviceType.options.option1"
                                     )}
-                                    errors={errors.serviceType?.option1}
                                     value={"ورشة صيانة وتصليح سيارات"}
                                     name={"serviceType"}
                                     setValue={setValue}
@@ -135,7 +182,6 @@ const CareersPage = ({ params: { locale } }) => {
                                     label={t(
                                         "form.serviceType.options.option2"
                                     )}
-                                    errors={errors.serviceType?.option2}
                                     value={"خدمة إنقاذ مركبات"}
                                     name={"serviceType"}
                                     setValue={setValue}
@@ -145,7 +191,6 @@ const CareersPage = ({ params: { locale } }) => {
                                     label={t(
                                         "form.serviceType.options.option3"
                                     )}
-                                    errors={errors.serviceType?.option3}
                                     value={"أخرى"}
                                     name={"serviceType"}
                                     setValue={setValue}
@@ -208,13 +253,9 @@ const CareersPage = ({ params: { locale } }) => {
                             <p className={classes.title}>
                                 {t("form.taxId.title")}
                             </p>
-                            <Checkbox
+                            <CheckboxNormal
                                 label={t("form.taxId.option")}
-                                errors={errors.taxId}
-                                value={true}
-                                name={"taxId"}
-                                setValue={setValue}
-                                selectedValue={taxId}
+                                register={register("taxId")}
                             />
                         </div>
 
@@ -223,13 +264,9 @@ const CareersPage = ({ params: { locale } }) => {
                             <p className={classes.title}>
                                 {t("form.commercialRegister.title")}
                             </p>
-                            <Checkbox
+                            <CheckboxNormal
                                 label={t("form.commercialRegister.option")}
-                                errors={errors.commercialRegister}
-                                value={true}
-                                name={"commercialRegister"}
-                                setValue={setValue}
-                                selectedValue={commercialRegister}
+                                register={register("commercialRegister")}
                             />
                         </div>
 
@@ -240,15 +277,16 @@ const CareersPage = ({ params: { locale } }) => {
                                 placeholder={t(
                                     "form.AddetionalQuestions.placeholder"
                                 )}
-                                register={register("additionalInfo")}
-                                errors={errors.additionalInfo}
+                                register={register("message")}
+                                errors={errors.message}
                                 required={false}
                             />
                         </div>
                     </div>
 
-                    <button type="submit" className={classes.button}>
-                        {t("form.submit") || "Submit"}
+                    <button type="submit" className={classes.button}
+                        disabled={Object.keys(errors).length > 0 || isSubmitting} >
+                        {isSubmitting ? t("form.submitting") : t("form.submit")}
                     </button>
                 </form>
             </div>

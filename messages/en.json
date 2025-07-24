@@ -364,6 +364,7 @@
 				"placeholder": "Write your question or comment here..."
 			},
 			"submit": "Submit",
+			"submitting": "Submitting...",
 			"errors": {
 				"fullName": "Please enter your full name",
 				"company": "Please enter your company name",
@@ -375,7 +376,9 @@
 				"phone": "Please enter your phone number",
 				"email": "Please enter a valid email address",
 				"fbPage": "Please enter a valid Facebook page link"
-			}
+			},
+			"errorMessage": "Please fill all required fields correctly.",
+			"successMessage": "Thank you for your interest in Sayyn! Our team will contact you within 24 hours to discuss the next steps."
 		}
 	},
 	"AppDownloadPage": {

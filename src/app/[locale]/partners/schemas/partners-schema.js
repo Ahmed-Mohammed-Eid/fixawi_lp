@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { useTranslations } from "next-intl";
 
 const createSchema = (t) => z
     .object({
@@ -11,6 +10,8 @@ const createSchema = (t) => z
         typeOfOtherServices: z.string().optional(),
         place: z.string().min(1, t("form.errors.place")),
         phone: z.string().min(1, t("form.errors.phone")),
+        taxId: z.boolean().optional(),
+        commercialRegister: z.boolean().optional(),
     })
     .refine(
         (data) => {

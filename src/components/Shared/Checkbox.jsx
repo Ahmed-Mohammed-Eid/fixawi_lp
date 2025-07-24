@@ -3,8 +3,6 @@ import classes from "./Checkbox.module.css";
 
 const Checkbox = ({
     label,
-    register,
-    errors,
     value,
     name,
     selectedValue = [],
