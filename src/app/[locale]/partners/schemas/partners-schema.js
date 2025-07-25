@@ -12,6 +12,9 @@ const createSchema = (t) => z
         phone: z.string().min(1, t("form.errors.phone")),
         taxId: z.boolean().optional(),
         commercialRegister: z.boolean().optional(),
+        email: z.string().email(t("form.errors.email")).nullable().optional(),
+        message: z.string().nullable().optional(),
+        fbPage: z.string().nullable().optional(),
     })
     .refine(
         (data) => {

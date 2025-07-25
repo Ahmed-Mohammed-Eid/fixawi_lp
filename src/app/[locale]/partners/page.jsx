@@ -61,6 +61,8 @@ const CareersPage = ({ params: { locale } }) => {
     // SUBMIT HANDLER
     const onSubmit = (data) => {
         setIsSubmitting(true);
+
+        console.log(data);
         const formattedData = {
             fullName: data.fullName,
             serviceCenterTitle: data.company,
@@ -234,7 +236,7 @@ const CareersPage = ({ params: { locale } }) => {
                         <Input
                             label={t("form.email")}
                             placeholder={t("form.email")}
-                            register={register("email", { required: true })}
+                            register={register("email")}
                             errors={errors.email}
                             required={false}
                         />
@@ -243,7 +245,7 @@ const CareersPage = ({ params: { locale } }) => {
                         <Input
                             label={t("form.fbPage")}
                             placeholder={t("form.fbPage")}
-                            register={register("fbPage", { required: true })}
+                            register={register("fbPage")}
                             errors={errors.fbPage}
                             required={false}
                         />
