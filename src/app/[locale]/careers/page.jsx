@@ -89,7 +89,7 @@ const AppDownloadPage = ({ params: { locale } }) => {
                     <Image
                         src={logoImage}
                         alt="Sayyn Logo"
-                        width={50}
+                        width={80}
                         height={50}
                     />
                 }

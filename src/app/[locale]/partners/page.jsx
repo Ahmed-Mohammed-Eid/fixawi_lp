@@ -109,7 +109,7 @@ const CareersPage = ({ params: { locale } }) => {
                     <Image
                         src={careersImage}
                         alt="Sayyn Logo"
-                        width={50}
+                        width={80}
                         height={50}
                     />
                 }
@@ -252,7 +252,7 @@ const CareersPage = ({ params: { locale } }) => {
 
                         {/* Tax ID */}
                         <div className={classes.mixedGroup}>
-                            <p className={classes.title}>
+                            <p className={classes.label}>
                                 {t("form.taxId.title")}
                             </p>
                             <CheckboxNormal
@@ -263,7 +263,7 @@ const CareersPage = ({ params: { locale } }) => {
 
                         {/* Commercial Registration */}
                         <div className={classes.mixedGroup}>
-                            <p className={classes.title}>
+                            <p className={classes.label}>
                                 {t("form.commercialRegister.title")}
                             </p>
                             <CheckboxNormal

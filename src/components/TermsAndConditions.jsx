@@ -13,7 +13,7 @@ const PrivacyPolicies = ({ locale }) => {
         <>
             <FixedNavbar
                 logo={
-                    <Image src={logo} alt="Sayyn Logo" width={50} height={50} />
+                    <Image src={logo} alt="Sayyn Logo" width={80} height={50} />
                 }
                 links={[
                     { label: "home", href: `/${locale}` },

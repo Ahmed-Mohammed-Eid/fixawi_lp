@@ -16,7 +16,7 @@ const PrivacyPolicies = ({locale}) => {
                     <Image
                         src={logo}
                         alt="Sayyn Logo"
-                        width={50}
+                        width={80}
                         height={50}
                     />
                 }
