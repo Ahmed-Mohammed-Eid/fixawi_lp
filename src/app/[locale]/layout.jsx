@@ -108,17 +108,39 @@ export default async function LocaleLayout({ children, params: { locale } }) {
                     `}
                 </Script>
 
-                <script
-                    defer="defer"
-                    type="text/javascript"
-                    src="https://sayyn.odoo.com/im_livechat/loader/1"
-                ></script>
+                {/* <!-- Meta Pixel Code --> */}
+                <Script id="facebook-pixel" strategy="afterInteractive">
+                    {`
+                        !function(f,b,e,v,n,t,s)
+                        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                        n.queue=[];t=b.createElement(e);t.async=!0;
+                        t.src=v;s=b.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t,s)}(window, document,'script',
+                        'https://connect.facebook.net/en_US/fbevents.js');
+                        fbq('init', '1798343144091833');
+                        fbq('track', 'PageView');
+                    `}
+                </Script>
+                <noscript>
+                    <img height="1" width="1" style={{display:'none'}}
+                        src="https://www.facebook.com/tr?id=1798343144091833&ev=PageView&noscript=1"
+                        alt="fb-pixel" />
+                </noscript>
+                {/* <!-- End Meta Pixel Code --> */}
 
-                <script
-                    defer="defer"
-                    type="text/javascript"
+                <Script
+                    id="odoo-livechat-loader"
+                    strategy="afterInteractive"
+                    src="https://sayyn.odoo.com/im_livechat/loader/1"
+                />
+
+                <Script
+                    id="odoo-livechat-embed"
+                    strategy="afterInteractive"
                     src="https://sayyn.odoo.com/im_livechat/assets_embed.js"
-                ></script>
+                />
             </head>
             <body>
                 <NextIntlClientProvider messages={messages}>
