@@ -88,10 +88,10 @@ const CareersPage = ({ params: { locale } }) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
+                fbq('track', 'CompleteRegistration');
                 return response.json();
             })
-            .then((data) => {
-
+            .then((_) => {
                 toast.success(
                     t("form.successMessage")
                 );
