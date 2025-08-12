@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import classes from "./partnersPage.module.css";
 import Image from "next/image";
@@ -49,14 +49,6 @@ const CareersPage = ({ params: { locale } }) => {
     const serviceType = watch("serviceType");
     const commercialRegister = watch("commercialRegister");
     const taxId = watch("taxId");
-
-
-
-    
-
-    useEffect(() => {
-
-    }, [serviceType]);
 
     // SUBMIT HANDLER
     const onSubmit = (data) => {
